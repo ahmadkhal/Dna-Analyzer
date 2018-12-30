@@ -11,10 +11,7 @@ class DnaSequenceMember {
 public:
 
 
-
-
-
-    DnaSequenceMember(DnaSequence &seq, string name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
+    DnaSequenceMember(DnaSequence &seq, const string& name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
 
     }
 
@@ -31,9 +28,9 @@ public:
     }
 
 private:
-    DnaSequence m_seq;
-    string m_name;
-    size_t m_id;
+    DnaSequence     m_seq;
+    string          m_name;
+    size_t          m_id;
 
 };
 

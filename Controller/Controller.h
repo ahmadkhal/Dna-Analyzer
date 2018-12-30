@@ -1,6 +1,4 @@
-//
-// Created by ahmad on 12/29/18.
-//
+
 
 #ifndef DNAPROJECT_CONTROLLER_H
 #define DNAPROJECT_CONTROLLER_H

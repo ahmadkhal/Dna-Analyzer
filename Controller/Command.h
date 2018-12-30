@@ -15,7 +15,7 @@ using namespace std;
 
 class Command {
 public:
-    virtual void exec(vector<string> &strs) = 0;
+    virtual string exec(vector<string> &strs) = 0;
 
     virtual ~Command() {};
 
@@ -24,7 +24,7 @@ public:
 
 class NewCmd : public Command {
 public:
-    void exec(vector<string> &strs);
+    string exec(vector<string> &strs);
 
 private:
 };

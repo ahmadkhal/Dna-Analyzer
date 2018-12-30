@@ -13,14 +13,14 @@ public:
         return m_seq_count++;
     }
 
-    static DnaAnalyzer* getInstance() {
+    static DnaAnalyzer *getInstance() {
         if (!m_ref) {
             m_ref = new DnaAnalyzer();
         }
         return m_ref;
     }
 
-    Command *getCmd(string cmd) {
+    Command *getCmd(const string& cmd) {
         return m_first.at(cmd);
     }
 
@@ -30,8 +30,9 @@ public:
 
 private:
     DnaAnalyzer() {
-        m_seq_count = 0;
+        m_seq_count = 1;
         m_first["new"] = new NewCmd();
+
     }
 
     static DnaAnalyzer *m_ref;
