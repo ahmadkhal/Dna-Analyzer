@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/ahmad/CLionProjects/DnaProject/Controller/Command.cpp
-DnaAnalyzer.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
-Command.h
-/home/ahmad/CLionProjects/DnaProject/Controller/Command.h
-sstream
--
-
 /home/ahmad/CLionProjects/DnaProject/Controller/Command.h
 string
 -
@@ -57,6 +49,8 @@ map
 -
 Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Command.h
+../Model/SharedPtr.h
+/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/dnaSequenceMember.h
 ../Model/dnaSequence.h
@@ -66,6 +60,14 @@ Command.h
 iostream
 -
 exception
+-
+
+/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
+stdlib.h
+-
+exception
+-
+stdexcept
 -
 
 /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h

@@ -114,6 +114,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/UniquePtr.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.cpp">
 			<Option target="DnaProject"/>
 		</Unit>

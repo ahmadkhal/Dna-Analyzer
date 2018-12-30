@@ -7,6 +7,7 @@ CMakeFiles/DnaProject.dir/Controller/Command.cpp.o
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
  /home/ahmad/CLionProjects/DnaProject/Controller/dnaSequenceMember.h
  /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
+ /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
  /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
  /home/ahmad/CLionProjects/DnaProject/View/View.h
 CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o
@@ -20,6 +21,7 @@ CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
  /home/ahmad/CLionProjects/DnaProject/Controller/dnaSequenceMember.h
  /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
+ /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
  /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
  /home/ahmad/CLionProjects/DnaProject/View/CLI.h
  /home/ahmad/CLionProjects/DnaProject/View/View.h

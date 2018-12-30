@@ -16,7 +16,7 @@ vector<string> CommandParser::parse(const string &txt, char ch) {
     // Add the last one
     argv.push_back(txt.substr(initialPos, std::min(pos, txt.size()) - initialPos + 1));
 
-    if (*(argv.end()) == "") {
+    if (*(argv.end()-1) == "") {
         argv.pop_back();
 
     }

@@ -5,6 +5,7 @@
 #include "dnaSequenceMember.h"
 #include <map>
 #include "Command.h"
+#include "../Model/SharedPtr.h"
 
 class DnaAnalyzer {
 
@@ -20,7 +21,7 @@ public:
         return m_ref;
     }
 
-    Command *getCmd(const string& cmd) {
+    SharedPtr<Command>& getCmd(const string &cmd) {
         return m_first.at(cmd);
     }
 
@@ -31,12 +32,12 @@ public:
 private:
     DnaAnalyzer() {
         m_seq_count = 1;
-        m_first["new"] = new NewCmd();
+        m_first.insert(std::make_pair("new", SharedPtr<Command>(new NewCmd())));
 
     }
 
     static DnaAnalyzer *m_ref;
-    std::map<string, Command *> m_first;
+    std::map<string, SharedPtr<Command> > m_first;
     vector<DnaSequenceMember> m_sequences;
     size_t m_seq_count;
 

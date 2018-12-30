@@ -31,6 +31,6 @@ int main(int argc, char *argv[]) {
         commandLine.print(CommandOutputString);
         arg_vector.clear();
     }
-    cout<<"good bye!"<<endl;
+    cout<<"------ Good Bye ------"<<endl;
     return 0;
 }
