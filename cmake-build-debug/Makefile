@@ -150,6 +150,33 @@ Controller/Command.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Command.cpp.s
 .PHONY : Controller/Command.cpp.s
 
+Controller/CommandParser.o: Controller/CommandParser.cpp.o
+
+.PHONY : Controller/CommandParser.o
+
+# target to build an object file
+Controller/CommandParser.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o
+.PHONY : Controller/CommandParser.cpp.o
+
+Controller/CommandParser.i: Controller/CommandParser.cpp.i
+
+.PHONY : Controller/CommandParser.i
+
+# target to preprocess a source file
+Controller/CommandParser.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.i
+.PHONY : Controller/CommandParser.cpp.i
+
+Controller/CommandParser.s: Controller/CommandParser.cpp.s
+
+.PHONY : Controller/CommandParser.s
+
+# target to generate assembly for a file
+Controller/CommandParser.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.s
+.PHONY : Controller/CommandParser.cpp.s
+
 Controller/Controller.o: Controller/Controller.cpp.o
 
 .PHONY : Controller/Controller.o
@@ -270,6 +297,9 @@ help:
 	@echo "... Controller/Command.o"
 	@echo "... Controller/Command.i"
 	@echo "... Controller/Command.s"
+	@echo "... Controller/CommandParser.o"
+	@echo "... Controller/CommandParser.i"
+	@echo "... Controller/CommandParser.s"
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"

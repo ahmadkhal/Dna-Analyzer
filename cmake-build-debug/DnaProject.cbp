@@ -90,6 +90,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Command.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp">
 			<Option target="DnaProject"/>
 		</Unit>

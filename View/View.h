@@ -3,29 +3,19 @@
 
 #include <iostream>
 
-using namespace std;
+using std::string;
 
 class View {
-private:
-    static View *v;
-
-    View() {}
 
 public:
-    void startNewCommand() const {
-        cout << "cmd >>";
-    }
+    View() {}
 
-    void print(const string& str) const {
-        cout << str << endl;
-    }
+    virtual ~View() {}
 
-    static View *getView() {
-        if (!v) {
-            v = new View();
-        }
-        return v;
-    }
+    virtual void print(const string &str) const = 0;
+
+    virtual string prompt() = 0;
+
 };
 
 

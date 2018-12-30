@@ -1,8 +1,19 @@
-//
-// Created by ahmad on 12/30/18.
-//
-
 #ifndef DNAPROJECT_CLI_H
 #define DNAPROJECT_CLI_H
+
+
+#include "View.h"
+
+class CLI : public View {
+public:
+    CLI();
+
+    ~CLI();
+
+    void print(const string &s) const;
+    void startNewCommand();
+    string prompt();
+};
+
 
 #endif //DNAPROJECT_CLI_H

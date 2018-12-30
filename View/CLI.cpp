@@ -1,4 +1,22 @@
-//
-// Created by ahmad on 12/30/18.
-//
+#include "CLI.h"
 
+
+CLI::CLI() {
+
+}
+
+CLI::~CLI() {
+
+}
+
+void CLI::print(const string &s) const {
+    std::cout << s << std::endl;
+}
+void  CLI::startNewCommand(){
+    std::cout<<"cmd>>";
+}
+string CLI::prompt() {
+    string cmdLine;
+    std::getline(std::cin, cmdLine);
+    return cmdLine;
+}

@@ -26,11 +26,21 @@ dnaSequenceMember.h
 ../View/View.h
 /home/ahmad/CLionProjects/DnaProject/View/View.h
 
+/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.h
+vector
+-
+string
+-
+
 /home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp
 Controller.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Controller.h
 DnaAnalyzer.h
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
+CommandParser.h
+/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.h
+../View/CLI.h
+/home/ahmad/CLionProjects/DnaProject/View/CLI.h
 iostream
 -
 vector
@@ -82,7 +92,9 @@ assert.h
 vector
 -
 
-/home/ahmad/CLionProjects/DnaProject/View/CLI.cpp
+/home/ahmad/CLionProjects/DnaProject/View/CLI.h
+View.h
+/home/ahmad/CLionProjects/DnaProject/View/View.h
 
 /home/ahmad/CLionProjects/DnaProject/View/View.h
 iostream

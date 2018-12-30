@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/Command.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Command.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o"
