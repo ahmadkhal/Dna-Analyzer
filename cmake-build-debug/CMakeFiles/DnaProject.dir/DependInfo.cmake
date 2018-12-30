@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/View/CLI.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/View/CLI.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

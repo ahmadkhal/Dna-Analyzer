@@ -1,16 +1,14 @@
-//
-// Created by ahmad on 12/29/18.
-//
-
-#include <iostream>
-using namespace std;
-
 #ifndef DNAPROJECT_VIEW_H
 #define DNAPROJECT_VIEW_H
+
+#include <iostream>
+
+using namespace std;
 
 class View {
 private:
     static View *v;
+
     View() {}
 
 public:
@@ -18,10 +16,11 @@ public:
         cout << "cmd >>";
     }
 
-    void print(string str) const {
+    void print(const string& str) const {
         cout << str << endl;
     }
-    static View* getView() {
+
+    static View *getView() {
         if (!v) {
             v = new View();
         }

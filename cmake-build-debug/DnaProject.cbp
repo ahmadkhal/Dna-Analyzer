@@ -114,6 +114,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/View/CLI.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/View/CLI.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/View/View.h">
 			<Option target="DnaProject"/>
 		</Unit>

@@ -231,6 +231,33 @@ Model/dnaSequence.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.s
 .PHONY : Model/dnaSequence.cpp.s
 
+View/CLI.o: View/CLI.cpp.o
+
+.PHONY : View/CLI.o
+
+# target to build an object file
+View/CLI.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/View/CLI.cpp.o
+.PHONY : View/CLI.cpp.o
+
+View/CLI.i: View/CLI.cpp.i
+
+.PHONY : View/CLI.i
+
+# target to preprocess a source file
+View/CLI.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/View/CLI.cpp.i
+.PHONY : View/CLI.cpp.i
+
+View/CLI.s: View/CLI.cpp.s
+
+.PHONY : View/CLI.s
+
+# target to generate assembly for a file
+View/CLI.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/View/CLI.cpp.s
+.PHONY : View/CLI.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... Model/dnaSequence.o"
 	@echo "... Model/dnaSequence.i"
 	@echo "... Model/dnaSequence.s"
+	@echo "... View/CLI.o"
+	@echo "... View/CLI.i"
+	@echo "... View/CLI.s"
 .PHONY : help
 
 

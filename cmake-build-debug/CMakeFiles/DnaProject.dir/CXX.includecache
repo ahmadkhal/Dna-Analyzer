@@ -11,6 +11,8 @@ DnaAnalyzer.h
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
 Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Command.h
+sstream
+-
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Command.h
 string
@@ -79,6 +81,8 @@ assert.h
 -
 vector
 -
+
+/home/ahmad/CLionProjects/DnaProject/View/CLI.cpp
 
 /home/ahmad/CLionProjects/DnaProject/View/View.h
 iostream
