@@ -2,6 +2,7 @@
 #include "DnaAnalyzer.h"
 #include "CommandParser.h"
 #include "../View/CLI.h"
+#include "../Model/UniquePtr.h"
 #include <iostream>
 #include <vector>
 
@@ -15,20 +16,22 @@ DnaAnalyzer *DnaAnalyzer::m_ref = 0;
 int main(int argc, char *argv[]) {
     Controller ctrl;
     CommandParser commandParser;
-    CLI commandLine;
+    UniquePtr<View> view( new CLI());
+
     string CommandOutputString;
 
     string cmdline;
+    string result;
     vector<string> arg_vector;
     while (1) {
-        commandLine.startNewCommand();
+        view->start();
         getline(cin, cmdline);
         arg_vector=commandParser.parse(cmdline, ' ');
         if(arg_vector[0]=="exit"){
             break;
         }
-        CommandOutputString=DnaAnalyzer::getInstance()->getCmd(arg_vector[0])->exec(arg_vector);
-        commandLine.print(CommandOutputString);
+      result=DnaAnalyzer::getInstance()->getCmd(arg_vector[0])->execute(arg_vector);
+        view->print(result);
         arg_vector.clear();
     }
     cout<<"------ Good Bye ------"<<endl;

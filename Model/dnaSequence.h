@@ -6,7 +6,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <exception>
-#include <fstream>
 #include "Nucleotide.h"
 #include <map>
 #include <iterator>
@@ -22,8 +21,7 @@ using std::exception;
 using std::invalid_argument;
 using std::map;
 using std::bad_alloc;
-using std::ofstream;
-using std::ifstream;
+
 
 
 class DnaSequence {
@@ -68,10 +66,6 @@ public:
     DnaSequence slicing(int from, int to) const;
 
     DnaSequence pairing() const;
-
-    vector<DnaSequence> readFromFile(const char *path) const;
-
-    void writeToFile(const char *path) const;
 
     int count(const DnaSequence &subSequence) const;
 

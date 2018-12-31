@@ -220,31 +220,7 @@ ostream& operator<<(ostream& out, const DnaSequence& ds) {
 
 	return out;
 }
-vector<DnaSequence> DnaSequence::readFromFile(const char* path)const  {
-	string str;
-	ifstream infile;
-	vector<DnaSequence> readedSequences;
-	infile.open(path);
-	while (!infile.eof()) {
-		getline(infile, str);
-		readedSequences.push_back(DnaSequence(str));
-	}
-	infile.close();
 
-	return readedSequences;
-
-}
-void DnaSequence::writeToFile(const char* path)const {
-	string str;
-	ofstream outFile;
-	outFile.open(path);
-	for (int i = 0; i < getLength(); i++) {
-		str += aux_dna[i].getchar();
-	}
-	outFile<<*this<<endl;
-	outFile.close();
-
-}
 
 
 

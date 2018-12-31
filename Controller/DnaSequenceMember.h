@@ -1,7 +1,3 @@
-//
-// Created by ahmad on 12/29/18.
-//
-
 #ifndef DNAPROJECT_DNASEQUENCEMEMBER_H
 #define DNAPROJECT_DNASEQUENCEMEMBER_H
 
@@ -11,7 +7,7 @@ class DnaSequenceMember {
 public:
 
 
-    DnaSequenceMember(DnaSequence &seq, const string& name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
+    DnaSequenceMember(DnaSequence seq, const string name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
 
     }
 
@@ -28,11 +24,10 @@ public:
     }
 
 private:
-    DnaSequence     m_seq;
-    string          m_name;
-    size_t          m_id;
+    DnaSequence m_seq;
+    string m_name;
+    size_t m_id;
 
 };
-
 
 #endif //DNAPROJECT_DNASEQUENCEMEMBER_H

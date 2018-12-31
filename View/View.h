@@ -16,6 +16,8 @@ public:
 
     virtual string prompt() = 0;
 
+    virtual void start() const = 0;
+
 };
 
 

@@ -11,7 +11,9 @@ public:
     ~CLI();
 
     void print(const string &s) const;
-    void startNewCommand();
+
+    void start()const;
+
     string prompt();
 };
 

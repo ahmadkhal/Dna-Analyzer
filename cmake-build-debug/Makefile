@@ -123,33 +123,6 @@ DnaProject/fast:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/build
 .PHONY : DnaProject/fast
 
-Controller/Command.o: Controller/Command.cpp.o
-
-.PHONY : Controller/Command.o
-
-# target to build an object file
-Controller/Command.cpp.o:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Command.cpp.o
-.PHONY : Controller/Command.cpp.o
-
-Controller/Command.i: Controller/Command.cpp.i
-
-.PHONY : Controller/Command.i
-
-# target to preprocess a source file
-Controller/Command.cpp.i:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Command.cpp.i
-.PHONY : Controller/Command.cpp.i
-
-Controller/Command.s: Controller/Command.cpp.s
-
-.PHONY : Controller/Command.s
-
-# target to generate assembly for a file
-Controller/Command.cpp.s:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Command.cpp.s
-.PHONY : Controller/Command.cpp.s
-
 Controller/CommandParser.o: Controller/CommandParser.cpp.o
 
 .PHONY : Controller/CommandParser.o
@@ -177,6 +150,114 @@ Controller/CommandParser.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.s
 .PHONY : Controller/CommandParser.cpp.s
 
+Controller/Commands/Creational/LoadCommand.o: Controller/Commands/Creational/LoadCommand.cpp.o
+
+.PHONY : Controller/Commands/Creational/LoadCommand.o
+
+# target to build an object file
+Controller/Commands/Creational/LoadCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o
+.PHONY : Controller/Commands/Creational/LoadCommand.cpp.o
+
+Controller/Commands/Creational/LoadCommand.i: Controller/Commands/Creational/LoadCommand.cpp.i
+
+.PHONY : Controller/Commands/Creational/LoadCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Creational/LoadCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.i
+.PHONY : Controller/Commands/Creational/LoadCommand.cpp.i
+
+Controller/Commands/Creational/LoadCommand.s: Controller/Commands/Creational/LoadCommand.cpp.s
+
+.PHONY : Controller/Commands/Creational/LoadCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Creational/LoadCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.s
+.PHONY : Controller/Commands/Creational/LoadCommand.cpp.s
+
+Controller/Commands/Creational/NewCommand.o: Controller/Commands/Creational/NewCommand.cpp.o
+
+.PHONY : Controller/Commands/Creational/NewCommand.o
+
+# target to build an object file
+Controller/Commands/Creational/NewCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.o
+.PHONY : Controller/Commands/Creational/NewCommand.cpp.o
+
+Controller/Commands/Creational/NewCommand.i: Controller/Commands/Creational/NewCommand.cpp.i
+
+.PHONY : Controller/Commands/Creational/NewCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Creational/NewCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.i
+.PHONY : Controller/Commands/Creational/NewCommand.cpp.i
+
+Controller/Commands/Creational/NewCommand.s: Controller/Commands/Creational/NewCommand.cpp.s
+
+.PHONY : Controller/Commands/Creational/NewCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Creational/NewCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.s
+.PHONY : Controller/Commands/Creational/NewCommand.cpp.s
+
+Controller/Commands/Management/SaveCommand.o: Controller/Commands/Management/SaveCommand.cpp.o
+
+.PHONY : Controller/Commands/Management/SaveCommand.o
+
+# target to build an object file
+Controller/Commands/Management/SaveCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o
+.PHONY : Controller/Commands/Management/SaveCommand.cpp.o
+
+Controller/Commands/Management/SaveCommand.i: Controller/Commands/Management/SaveCommand.cpp.i
+
+.PHONY : Controller/Commands/Management/SaveCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Management/SaveCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.i
+.PHONY : Controller/Commands/Management/SaveCommand.cpp.i
+
+Controller/Commands/Management/SaveCommand.s: Controller/Commands/Management/SaveCommand.cpp.s
+
+.PHONY : Controller/Commands/Management/SaveCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Management/SaveCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.s
+.PHONY : Controller/Commands/Management/SaveCommand.cpp.s
+
+Controller/Commands/Manipulation/ManipulationCommand.o: Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.o
+
+# target to build an object file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+
+Controller/Commands/Manipulation/ManipulationCommand.i: Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+
+Controller/Commands/Manipulation/ManipulationCommand.s: Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+
 Controller/Controller.o: Controller/Controller.cpp.o
 
 .PHONY : Controller/Controller.o
@@ -203,6 +284,60 @@ Controller/Controller.s: Controller/Controller.cpp.s
 Controller/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Controller.cpp.s
 .PHONY : Controller/Controller.cpp.s
+
+Model/FIleReader.o: Model/FIleReader.cpp.o
+
+.PHONY : Model/FIleReader.o
+
+# target to build an object file
+Model/FIleReader.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.o
+.PHONY : Model/FIleReader.cpp.o
+
+Model/FIleReader.i: Model/FIleReader.cpp.i
+
+.PHONY : Model/FIleReader.i
+
+# target to preprocess a source file
+Model/FIleReader.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.i
+.PHONY : Model/FIleReader.cpp.i
+
+Model/FIleReader.s: Model/FIleReader.cpp.s
+
+.PHONY : Model/FIleReader.s
+
+# target to generate assembly for a file
+Model/FIleReader.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.s
+.PHONY : Model/FIleReader.cpp.s
+
+Model/FileWriter.o: Model/FileWriter.cpp.o
+
+.PHONY : Model/FileWriter.o
+
+# target to build an object file
+Model/FileWriter.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.o
+.PHONY : Model/FileWriter.cpp.o
+
+Model/FileWriter.i: Model/FileWriter.cpp.i
+
+.PHONY : Model/FileWriter.i
+
+# target to preprocess a source file
+Model/FileWriter.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.i
+.PHONY : Model/FileWriter.cpp.i
+
+Model/FileWriter.s: Model/FileWriter.cpp.s
+
+.PHONY : Model/FileWriter.s
+
+# target to generate assembly for a file
+Model/FileWriter.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.s
+.PHONY : Model/FileWriter.cpp.s
 
 Model/Nucleotide.o: Model/Nucleotide.cpp.o
 
@@ -294,15 +429,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DnaProject"
 	@echo "... edit_cache"
-	@echo "... Controller/Command.o"
-	@echo "... Controller/Command.i"
-	@echo "... Controller/Command.s"
 	@echo "... Controller/CommandParser.o"
 	@echo "... Controller/CommandParser.i"
 	@echo "... Controller/CommandParser.s"
+	@echo "... Controller/Commands/Creational/LoadCommand.o"
+	@echo "... Controller/Commands/Creational/LoadCommand.i"
+	@echo "... Controller/Commands/Creational/LoadCommand.s"
+	@echo "... Controller/Commands/Creational/NewCommand.o"
+	@echo "... Controller/Commands/Creational/NewCommand.i"
+	@echo "... Controller/Commands/Creational/NewCommand.s"
+	@echo "... Controller/Commands/Management/SaveCommand.o"
+	@echo "... Controller/Commands/Management/SaveCommand.i"
+	@echo "... Controller/Commands/Management/SaveCommand.s"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.o"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.i"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.s"
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"
+	@echo "... Model/FIleReader.o"
+	@echo "... Model/FIleReader.i"
+	@echo "... Model/FIleReader.s"
+	@echo "... Model/FileWriter.o"
+	@echo "... Model/FileWriter.i"
+	@echo "... Model/FileWriter.s"
 	@echo "... Model/Nucleotide.o"
 	@echo "... Model/Nucleotide.i"
 	@echo "... Model/Nucleotide.s"

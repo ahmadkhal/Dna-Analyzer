@@ -84,16 +84,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Command.cpp">
-			<Option target="DnaProject"/>
-		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Command.h">
-			<Option target="DnaProject"/>
-		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/CreationalCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/NewCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/NewCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/ManagementCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp">
@@ -105,7 +132,19 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/dnaSequenceMember.h">
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.cpp">
