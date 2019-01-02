@@ -1,7 +1,11 @@
-#include "../../DnaAnalyzer.h"
+
 #include "NewCommand.h"
 #include <sstream>
-
+#include "../../DnaAnalyzer.h"
+#include "../../../Model/SharedPtr.h"
+#include "../../DnaAnalyzer.h"
+#include "../../../Model/FileWriter.h"
+#include "../../../Model/FIleReader.h"
 string NewCommand::execute(vector<string> &strs) {
     string arg1 = strs[1];
     string arg2;

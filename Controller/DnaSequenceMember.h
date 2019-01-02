@@ -1,6 +1,7 @@
 #ifndef DNAPROJECT_DNASEQUENCEMEMBER_H
 #define DNAPROJECT_DNASEQUENCEMEMBER_H
 
+#include <sstream>
 #include "../Model/dnaSequence.h"
 
 class DnaSequenceMember {
@@ -11,8 +12,23 @@ public:
 
     }
 
-    DnaSequence getDnaSequence() const {
+    string formated_string() const {
+        std::ostringstream oss;
+        oss << m_seq;
+        string sequence_string = oss.str();
+        size_t sequence_size = sequence_string.size();
+        if (sequence_size > 40) {
+            return sequence_string.substr(0, 32) + "..." + sequence_string.substr(sequence_size - 3, sequence_size);
+        }
+        return sequence_string;
+    }
+
+    const DnaSequence &getDnaSequence() const {
         return m_seq;
+    }
+
+    void setDnaSequence(const DnaSequence &ds) {
+        m_seq = ds;
     }
 
     string getName() const {
@@ -29,5 +45,10 @@ private:
     size_t m_id;
 
 };
+
+static ostream &operator<<(ostream &os, const DnaSequenceMember &dnaSequenceMember) {
+    os << "[" << dnaSequenceMember.getID() << "] " << dnaSequenceMember.getName() << ": "
+       << dnaSequenceMember.formated_string()<<endl;
+}
 
 #endif //DNAPROJECT_DNASEQUENCEMEMBER_H

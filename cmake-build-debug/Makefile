@@ -150,6 +150,33 @@ Controller/CommandParser.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.s
 .PHONY : Controller/CommandParser.cpp.s
 
+Controller/Commands/Control/ListCommand.o: Controller/Commands/Control/ListCommand.cpp.o
+
+.PHONY : Controller/Commands/Control/ListCommand.o
+
+# target to build an object file
+Controller/Commands/Control/ListCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o
+.PHONY : Controller/Commands/Control/ListCommand.cpp.o
+
+Controller/Commands/Control/ListCommand.i: Controller/Commands/Control/ListCommand.cpp.i
+
+.PHONY : Controller/Commands/Control/ListCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Control/ListCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.i
+.PHONY : Controller/Commands/Control/ListCommand.cpp.i
+
+Controller/Commands/Control/ListCommand.s: Controller/Commands/Control/ListCommand.cpp.s
+
+.PHONY : Controller/Commands/Control/ListCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Control/ListCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.s
+.PHONY : Controller/Commands/Control/ListCommand.cpp.s
+
 Controller/Commands/Creational/LoadCommand.o: Controller/Commands/Creational/LoadCommand.cpp.o
 
 .PHONY : Controller/Commands/Creational/LoadCommand.o
@@ -231,32 +258,32 @@ Controller/Commands/Management/SaveCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.s
 .PHONY : Controller/Commands/Management/SaveCommand.cpp.s
 
-Controller/Commands/Manipulation/ManipulationCommand.o: Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+Controller/Commands/Manipulation/PairCommnad.o: Controller/Commands/Manipulation/PairCommnad.cpp.o
 
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.o
+.PHONY : Controller/Commands/Manipulation/PairCommnad.o
 
 # target to build an object file
-Controller/Commands/Manipulation/ManipulationCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+Controller/Commands/Manipulation/PairCommnad.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o
+.PHONY : Controller/Commands/Manipulation/PairCommnad.cpp.o
 
-Controller/Commands/Manipulation/ManipulationCommand.i: Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+Controller/Commands/Manipulation/PairCommnad.i: Controller/Commands/Manipulation/PairCommnad.cpp.i
 
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.i
+.PHONY : Controller/Commands/Manipulation/PairCommnad.i
 
 # target to preprocess a source file
-Controller/Commands/Manipulation/ManipulationCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.i
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+Controller/Commands/Manipulation/PairCommnad.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.i
+.PHONY : Controller/Commands/Manipulation/PairCommnad.cpp.i
 
-Controller/Commands/Manipulation/ManipulationCommand.s: Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+Controller/Commands/Manipulation/PairCommnad.s: Controller/Commands/Manipulation/PairCommnad.cpp.s
 
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.s
+.PHONY : Controller/Commands/Manipulation/PairCommnad.s
 
 # target to generate assembly for a file
-Controller/Commands/Manipulation/ManipulationCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.s
-.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+Controller/Commands/Manipulation/PairCommnad.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.s
+.PHONY : Controller/Commands/Manipulation/PairCommnad.cpp.s
 
 Controller/Controller.o: Controller/Controller.cpp.o
 
@@ -432,6 +459,9 @@ help:
 	@echo "... Controller/CommandParser.o"
 	@echo "... Controller/CommandParser.i"
 	@echo "... Controller/CommandParser.s"
+	@echo "... Controller/Commands/Control/ListCommand.o"
+	@echo "... Controller/Commands/Control/ListCommand.i"
+	@echo "... Controller/Commands/Control/ListCommand.s"
 	@echo "... Controller/Commands/Creational/LoadCommand.o"
 	@echo "... Controller/Commands/Creational/LoadCommand.i"
 	@echo "... Controller/Commands/Creational/LoadCommand.s"
@@ -441,9 +471,9 @@ help:
 	@echo "... Controller/Commands/Management/SaveCommand.o"
 	@echo "... Controller/Commands/Management/SaveCommand.i"
 	@echo "... Controller/Commands/Management/SaveCommand.s"
-	@echo "... Controller/Commands/Manipulation/ManipulationCommand.o"
-	@echo "... Controller/Commands/Manipulation/ManipulationCommand.i"
-	@echo "... Controller/Commands/Manipulation/ManipulationCommand.s"
+	@echo "... Controller/Commands/Manipulation/PairCommnad.o"
+	@echo "... Controller/Commands/Manipulation/PairCommnad.i"
+	@echo "... Controller/Commands/Manipulation/PairCommnad.s"
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"

@@ -4,7 +4,7 @@
 #include <string>
 #include "SharedPtr.h"
 #include "dnaSequence.h"
-#include "../Controller/DnaSequenceMember.h"
+
 
 
 using std::string;

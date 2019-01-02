@@ -8,7 +8,7 @@
 
 #include "../Command.h"
 
-class CreationalCommand: public Command {
+class CreationalCommand : public Command {
 
 };
 

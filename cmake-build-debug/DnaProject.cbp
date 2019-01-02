@@ -93,6 +93,15 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ControlCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/CreationalCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
@@ -117,10 +126,13 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.cpp">
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h">
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommnad.cpp">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp">

@@ -5,10 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/NewCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o"
-  "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommnad.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.o"

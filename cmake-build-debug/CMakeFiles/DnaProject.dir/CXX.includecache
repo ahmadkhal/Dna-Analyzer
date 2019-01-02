@@ -11,32 +11,24 @@ string
 -
 vector
 -
-../../Model/dnaSequence.h
-/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
-../../View/View.h
-/home/ahmad/CLionProjects/DnaProject/View/View.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ControlCommand.h
+../Command.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.cpp
+ListCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.h
+../../DnaAnalyzer.h
+/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.h
+ControlCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ControlCommand.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/CreationalCommand.h
 ../Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp
-cstdlib
--
-sstream
--
-LoadCommand.h
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.h
-../../DnaSequenceMember.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
-../../../Model/SharedPtr.h
-/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-../../DnaAnalyzer.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
-../../../Model/FileWriter.h
-/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.h
-../../../Model/FIleReader.h
-/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.h
 CreationalCommand.h
@@ -53,6 +45,14 @@ CreationalCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h
 ManagementCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/ManagementCommand.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+../Command.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h
+ManipulationCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
 ../Model/dnaSequence.h
@@ -71,28 +71,16 @@ Commands/Management/SaveCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h
 Commands/Creational/LoadCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.h
+Commands/Manipulation/PairCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h
+Commands/Control/ListCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
+sstream
+-
 ../Model/dnaSequence.h
 /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
-
-/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.h
-string
--
-SharedPtr.h
-/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-dnaSequence.h
-/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
-../Controller/DnaSequenceMember.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
-
-/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.h
-string
--
-dnaSequence.h
-/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
-fstream
--
 
 /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
 iostream
@@ -128,9 +116,5 @@ iterator
 assert.h
 -
 vector
--
-
-/home/ahmad/CLionProjects/DnaProject/View/View.h
-iostream
 -
 

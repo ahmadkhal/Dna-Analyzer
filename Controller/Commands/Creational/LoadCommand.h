@@ -4,6 +4,7 @@
 
 #include "CreationalCommand.h"
 
+
 class LoadCommand : public CreationalCommand {
 public:
     string execute(vector<string> &strs);

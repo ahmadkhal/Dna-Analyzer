@@ -7,9 +7,7 @@
 
 #include <string>
 #include <vector>
-#include "../../Model/dnaSequence.h"
 
-#include "../../View/View.h"
 
 using namespace std;
 

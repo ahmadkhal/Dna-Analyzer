@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <sstream>
 #include "LoadCommand.h"
-#include "../../DnaSequenceMember.h"
+
 #include "../../../Model/SharedPtr.h"
 #include "../../DnaAnalyzer.h"
 #include "../../../Model/FileWriter.h"
@@ -25,7 +25,7 @@ string LoadCommand::execute(vector<string> &strs) {
     DnaAnalyzer::getInstance()->pushNewSeq(id, arg2, sp);
     size_t sequence_size = sequence_string.size();
     if (sequence_string.size() > 40) {
-        sequence_string =
+        sequence_string =sp->formated_string();
                 sequence_string.substr(0, 32) + "..." + sequence_string.substr(sequence_size - 3, sequence_size);
     }
     oss << "[" << id << "] " << arg2 << ": " << sequence_string;
