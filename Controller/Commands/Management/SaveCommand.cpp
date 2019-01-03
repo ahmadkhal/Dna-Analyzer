@@ -3,10 +3,10 @@
 #include "../../../Model/FileWriter.h"
 #include <sstream>
 
-string SaveCommand::execute(vector<string> &strs) {
-    size_t id = atoi(strs[1].c_str());
+string SaveCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+    size_t id = atoi(strs[1].substr(1,strs.size()).c_str());
 
-    SharedPtr<DnaSequenceMember> sp(DnaAnalyzer::getInstance()->getSequenceById(id));
+    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getSequenceById(id));
     ostringstream oss;
 
     string arg2;

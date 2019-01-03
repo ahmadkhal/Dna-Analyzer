@@ -1,16 +1,14 @@
 
 #include "NewCommand.h"
 #include <sstream>
-#include "../../DnaAnalyzer.h"
-#include "../../../Model/SharedPtr.h"
-#include "../../DnaAnalyzer.h"
-#include "../../../Model/FileWriter.h"
-#include "../../../Model/FIleReader.h"
-string NewCommand::execute(vector<string> &strs) {
+
+
+
+string NewCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
     string arg1 = strs[1];
     string arg2;
     ostringstream arg2_string_stream;
-    size_t id = DnaAnalyzer::getInstance()->getNextCount();
+    size_t id = dna_analyzer->getNextCount();
     if (strs.size() == 3) {
         arg2_string_stream << strs[2];
     } else {
@@ -18,7 +16,7 @@ string NewCommand::execute(vector<string> &strs) {
     }
 
     SharedPtr<DnaSequenceMember> sp(new DnaSequenceMember(DnaSequence(arg1), arg2_string_stream.str(), id));
-    DnaAnalyzer::getInstance()->pushNewSeq(id, arg2_string_stream.str(),sp);
+    dna_analyzer->pushNewSeq(id, arg2_string_stream.str(),sp);
     ostringstream oss;
     oss << "[" << id << "] " << arg2_string_stream.str() << " " << arg1;
     return oss.str();

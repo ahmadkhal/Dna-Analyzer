@@ -46,9 +46,10 @@ private:
 
 };
 
-static ostream &operator<<(ostream &os, const DnaSequenceMember &dnaSequenceMember) {
-    os << "[" << dnaSequenceMember.getID() << "] " << dnaSequenceMember.getName() << ": "
-       << dnaSequenceMember.formated_string()<<endl;
-}
+
+ ostream &operator<<(ostream &os, const DnaSequenceMember &dnaSequenceMember);
+
+
+
 
 #endif //DNAPROJECT_DNASEQUENCEMEMBER_H

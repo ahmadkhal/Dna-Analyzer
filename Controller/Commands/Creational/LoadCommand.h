@@ -7,7 +7,7 @@
 
 class LoadCommand : public CreationalCommand {
 public:
-    string execute(vector<string> &strs);
+    string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer);
 
 private:
 };

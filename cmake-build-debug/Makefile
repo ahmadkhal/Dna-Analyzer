@@ -150,6 +150,33 @@ Controller/CommandParser.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.s
 .PHONY : Controller/CommandParser.cpp.s
 
+Controller/Commands/Command.o: Controller/Commands/Command.cpp.o
+
+.PHONY : Controller/Commands/Command.o
+
+# target to build an object file
+Controller/Commands/Command.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o
+.PHONY : Controller/Commands/Command.cpp.o
+
+Controller/Commands/Command.i: Controller/Commands/Command.cpp.i
+
+.PHONY : Controller/Commands/Command.i
+
+# target to preprocess a source file
+Controller/Commands/Command.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.i
+.PHONY : Controller/Commands/Command.cpp.i
+
+Controller/Commands/Command.s: Controller/Commands/Command.cpp.s
+
+.PHONY : Controller/Commands/Command.s
+
+# target to generate assembly for a file
+Controller/Commands/Command.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.s
+.PHONY : Controller/Commands/Command.cpp.s
+
 Controller/Commands/Control/ListCommand.o: Controller/Commands/Control/ListCommand.cpp.o
 
 .PHONY : Controller/Commands/Control/ListCommand.o
@@ -312,6 +339,60 @@ Controller/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Controller.cpp.s
 .PHONY : Controller/Controller.cpp.s
 
+Controller/DnaSequenceMember.o: Controller/DnaSequenceMember.cpp.o
+
+.PHONY : Controller/DnaSequenceMember.o
+
+# target to build an object file
+Controller/DnaSequenceMember.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.o
+.PHONY : Controller/DnaSequenceMember.cpp.o
+
+Controller/DnaSequenceMember.i: Controller/DnaSequenceMember.cpp.i
+
+.PHONY : Controller/DnaSequenceMember.i
+
+# target to preprocess a source file
+Controller/DnaSequenceMember.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.i
+.PHONY : Controller/DnaSequenceMember.cpp.i
+
+Controller/DnaSequenceMember.s: Controller/DnaSequenceMember.cpp.s
+
+.PHONY : Controller/DnaSequenceMember.s
+
+# target to generate assembly for a file
+Controller/DnaSequenceMember.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.s
+.PHONY : Controller/DnaSequenceMember.cpp.s
+
+Controller/main.o: Controller/main.cpp.o
+
+.PHONY : Controller/main.o
+
+# target to build an object file
+Controller/main.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/main.cpp.o
+.PHONY : Controller/main.cpp.o
+
+Controller/main.i: Controller/main.cpp.i
+
+.PHONY : Controller/main.i
+
+# target to preprocess a source file
+Controller/main.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/main.cpp.i
+.PHONY : Controller/main.cpp.i
+
+Controller/main.s: Controller/main.cpp.s
+
+.PHONY : Controller/main.s
+
+# target to generate assembly for a file
+Controller/main.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/main.cpp.s
+.PHONY : Controller/main.cpp.s
+
 Model/FIleReader.o: Model/FIleReader.cpp.o
 
 .PHONY : Model/FIleReader.o
@@ -459,6 +540,9 @@ help:
 	@echo "... Controller/CommandParser.o"
 	@echo "... Controller/CommandParser.i"
 	@echo "... Controller/CommandParser.s"
+	@echo "... Controller/Commands/Command.o"
+	@echo "... Controller/Commands/Command.i"
+	@echo "... Controller/Commands/Command.s"
 	@echo "... Controller/Commands/Control/ListCommand.o"
 	@echo "... Controller/Commands/Control/ListCommand.i"
 	@echo "... Controller/Commands/Control/ListCommand.s"
@@ -477,6 +561,12 @@ help:
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"
+	@echo "... Controller/DnaSequenceMember.o"
+	@echo "... Controller/DnaSequenceMember.i"
+	@echo "... Controller/DnaSequenceMember.s"
+	@echo "... Controller/main.o"
+	@echo "... Controller/main.i"
+	@echo "... Controller/main.s"
 	@echo "... Model/FIleReader.o"
 	@echo "... Model/FIleReader.i"
 	@echo "... Model/FIleReader.s"

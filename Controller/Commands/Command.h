@@ -7,13 +7,17 @@
 
 #include <string>
 #include <vector>
+#include "../../Model/SharedPtr.h"
+#include "../DnaAnalyzer.h"
 
 
 using namespace std;
 
 class Command {
 public:
-    virtual string execute(vector<string> &strs) = 0;
+    static SharedPtr<Command> makeCommand(const string &command);
+
+    virtual string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) = 0;
 
     virtual ~Command() {};
 

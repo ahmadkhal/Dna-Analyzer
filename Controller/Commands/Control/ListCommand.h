@@ -6,7 +6,7 @@
 
 class ListCommand : public ControlCommand {
 public:
-    string execute(vector<string> &strs);
+    string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer);
 
 private:
 };

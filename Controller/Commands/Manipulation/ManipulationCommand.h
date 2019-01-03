@@ -7,7 +7,7 @@
 
 class ManipulationCommand : public Command {
 public:
-    string execute(vector<string> &strs) = 0;
+
 
 private:
 };
