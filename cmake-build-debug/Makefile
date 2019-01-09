@@ -285,6 +285,33 @@ Controller/Commands/Management/SaveCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.s
 .PHONY : Controller/Commands/Management/SaveCommand.cpp.s
 
+Controller/Commands/Manipulation/ConcatCommnad.o: Controller/Commands/Manipulation/ConcatCommnad.cpp.o
+
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.o
+
+# target to build an object file
+Controller/Commands/Manipulation/ConcatCommnad.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.cpp.o
+
+Controller/Commands/Manipulation/ConcatCommnad.i: Controller/Commands/Manipulation/ConcatCommnad.cpp.i
+
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.i
+
+# target to preprocess a source file
+Controller/Commands/Manipulation/ConcatCommnad.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.i
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.cpp.i
+
+Controller/Commands/Manipulation/ConcatCommnad.s: Controller/Commands/Manipulation/ConcatCommnad.cpp.s
+
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.s
+
+# target to generate assembly for a file
+Controller/Commands/Manipulation/ConcatCommnad.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.s
+.PHONY : Controller/Commands/Manipulation/ConcatCommnad.cpp.s
+
 Controller/Commands/Manipulation/PairCommnad.o: Controller/Commands/Manipulation/PairCommnad.cpp.o
 
 .PHONY : Controller/Commands/Manipulation/PairCommnad.o
@@ -311,6 +338,33 @@ Controller/Commands/Manipulation/PairCommnad.s: Controller/Commands/Manipulation
 Controller/Commands/Manipulation/PairCommnad.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.s
 .PHONY : Controller/Commands/Manipulation/PairCommnad.cpp.s
+
+Controller/Commands/Manipulation/ReplaceCommand.o: Controller/Commands/Manipulation/ReplaceCommand.cpp.o
+
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.o
+
+# target to build an object file
+Controller/Commands/Manipulation/ReplaceCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.cpp.o
+
+Controller/Commands/Manipulation/ReplaceCommand.i: Controller/Commands/Manipulation/ReplaceCommand.cpp.i
+
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Manipulation/ReplaceCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.i
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.cpp.i
+
+Controller/Commands/Manipulation/ReplaceCommand.s: Controller/Commands/Manipulation/ReplaceCommand.cpp.s
+
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Manipulation/ReplaceCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.s
+.PHONY : Controller/Commands/Manipulation/ReplaceCommand.cpp.s
 
 Controller/Commands/Manipulation/SliceCommand.o: Controller/Commands/Manipulation/SliceCommand.cpp.o
 
@@ -582,9 +636,15 @@ help:
 	@echo "... Controller/Commands/Management/SaveCommand.o"
 	@echo "... Controller/Commands/Management/SaveCommand.i"
 	@echo "... Controller/Commands/Management/SaveCommand.s"
+	@echo "... Controller/Commands/Manipulation/ConcatCommnad.o"
+	@echo "... Controller/Commands/Manipulation/ConcatCommnad.i"
+	@echo "... Controller/Commands/Manipulation/ConcatCommnad.s"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.o"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.i"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.s"
+	@echo "... Controller/Commands/Manipulation/ReplaceCommand.o"
+	@echo "... Controller/Commands/Manipulation/ReplaceCommand.i"
+	@echo "... Controller/Commands/Manipulation/ReplaceCommand.s"
 	@echo "... Controller/Commands/Manipulation/SliceCommand.o"
 	@echo "... Controller/Commands/Manipulation/SliceCommand.i"
 	@echo "... Controller/Commands/Manipulation/SliceCommand.s"

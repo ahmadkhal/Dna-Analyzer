@@ -21,30 +21,27 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
 
     ostringstream oss;
     ostringstream oss_name;
+    size_t id;
 
 
-    size_t id = atoi(strs[1].substr(1, strs[1].size()).c_str());
-
-    DnaSequence pair_dna = dna_analyzer->getSequenceById(id)->getDnaSequence().pairing();
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getSequenceById(id));
+    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
+    DnaSequence seq_after_pair = sp->getDnaSequence().pairing();
     if (strs[2] != ":") {
-        sp->setDnaSequence(pair_dna);
-        oss << "[" << id << "] " << pair_dna << ": " << sp->getName();
+        sp->setDnaSequence(seq_after_pair);
     } else {
-        string pair_name;
+        string paired_name;
         if (strs[3] == "@@") {
 
-            pair_name = choose_name(sp->getName(), dna_analyzer);
+            paired_name = choose_name(sp->getName(), dna_analyzer);
 
         } else {
-            pair_name = strs[3];
+            paired_name= strs[3];
         }
-        size_t pair_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(pair_dna, pair_name, pair_id));
-        dna_analyzer->pushNewSeq(pair_id, pair_name, new_sp);
-        oss << "[" << pair_id << "] " << pair_dna << ": " << pair_name;
+        size_t sliced_id = dna_analyzer->getNextCount();
+        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(seq_after_pair, paired_name, sliced_id));
+        dna_analyzer->pushNewSeq(sliced_id, paired_name, new_sp);
+        oss << *new_sp ;
 
     }
     return oss.str();
-
 }

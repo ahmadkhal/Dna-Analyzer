@@ -17,18 +17,16 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
 
     ostringstream oss;
     ostringstream oss_name;
-    size_t from=atoi(strs[2].c_str());
-    size_t to=atoi(strs[3].c_str());
+    size_t from = atoi(strs[2].c_str());
+    size_t to = atoi(strs[3].c_str());
+    size_t id;
 
 
-    size_t id = atoi(strs[1].substr(1, strs[1].size()).c_str());
-
-    DnaSequence sliced_dna = dna_analyzer->getSequenceById(id)->getDnaSequence().slicing(from,to);
-
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getSequenceById(id));
+    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
+    DnaSequence sliced_dna = sp->getDnaSequence().slicing(from, to);
     if (strs[2] != ":") {
         sp->setDnaSequence(sliced_dna);
-        oss << "[" << id << "] " << sliced_dna << ": " << sp->getName();
+        oss << "[" << sp->getID() << "] " << sliced_dna << ": " << sp->getName();
     } else {
         string sliced_name;
         if (strs[3] == "@@") {
@@ -41,7 +39,7 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
         size_t sliced_id = dna_analyzer->getNextCount();
         SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(sliced_dna, sliced_name, sliced_id));
         dna_analyzer->pushNewSeq(sliced_id, sliced_name, new_sp);
-        oss << "[" << sliced_id << "] " << sliced_dna << ": " << sliced_name;
+        oss << *new_sp << sliced_name;
 
     }
     return oss.str();

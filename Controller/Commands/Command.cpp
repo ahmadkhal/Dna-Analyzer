@@ -7,6 +7,8 @@
 #include "InvalidCommand.h"
 #include "Creational/NewCommand.h"
 #include "Manipulation/SliceCommand.h"
+#include "Manipulation/ReplaceCommand.h"
+#include "Manipulation/ConcatCommand.h"
 
 SharedPtr<Command> Command::makeCommand(const string &command) {
      if (command == "new")
@@ -21,8 +23,13 @@ SharedPtr<Command> Command::makeCommand(const string &command) {
         return SharedPtr<Command>(new ListCommand());
     else if (command == "slice")
          return SharedPtr<Command>(new SliceCommand());
+     else if (command == "replace")
+         return SharedPtr<Command>(new ReplaceCommand());
+     else if (command == "concat")
+         return SharedPtr<Command>(new ConcatCommand());
     else
         throw InvalidCommand();
+
 
 
 

@@ -29,6 +29,14 @@ public:
         return m_seqs_by_name.at(name);
     }
 
+    SharedPtr<DnaSequenceMember> getDnaSequenceByArg(const string &str) {
+        if (str[0] == '#') {
+
+            return m_seqs_by_id.at(atoi(str.substr(1, str.size()).c_str()));
+        }
+        return m_seqs_by_name.at(str.substr(1, str.size()));
+    }
+
     bool check_if_name_exist(string name) const {
 
         return !(m_seqs_by_name.find(name) == m_seqs_by_name.end());

@@ -265,6 +265,32 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp -o CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.s
 
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: CMakeFiles/DnaProject.dir/flags.make
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o -c /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp > CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.i
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp -o CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.s
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: CMakeFiles/DnaProject.dir/flags.make
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/Commands/Manipulation/ConcatCommnad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o -c /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp > CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.i
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp -o CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.s
+
 # Object files for target DnaProject
 DnaProject_OBJECTS = \
 "CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o" \
@@ -282,7 +308,9 @@ DnaProject_OBJECTS = \
 "CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o" \
 "CMakeFiles/DnaProject.dir/Controller/main.cpp.o" \
 "CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.o" \
-"CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o"
+"CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o" \
+"CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o" \
+"CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o"
 
 # External object files for target DnaProject
 DnaProject_EXTERNAL_OBJECTS =
@@ -303,9 +331,11 @@ DnaProject: CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o
 DnaProject: CMakeFiles/DnaProject.dir/Controller/main.cpp.o
 DnaProject: CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.o
 DnaProject: CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o
+DnaProject: CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o
+DnaProject: CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o
 DnaProject: CMakeFiles/DnaProject.dir/build.make
 DnaProject: CMakeFiles/DnaProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable DnaProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable DnaProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DnaProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

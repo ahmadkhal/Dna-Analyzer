@@ -14,8 +14,10 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Comma
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/InvalidCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Management/ManagementCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Management/SaveCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Manipulation/ConcatCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Manipulation/PairCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Manipulation/SliceCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/DnaAnalyzer.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/DnaSequenceMember.h
@@ -66,6 +68,16 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o: ../M
 CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o: ../Model/SharedPtr.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o: ../Model/dnaSequence.h
 
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/Commands/Command.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/Commands/Manipulation/ConcatCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/Commands/Manipulation/ConcatCommnad.cpp
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/DnaAnalyzer.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Controller/DnaSequenceMember.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Model/Nucleotide.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Model/SharedPtr.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o: ../Model/dnaSequence.h
+
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Controller/Commands/Command.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Controller/Commands/Manipulation/PairCommand.h
@@ -75,6 +87,16 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ..
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Model/Nucleotide.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Model/SharedPtr.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Model/dnaSequence.h
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Command.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.cpp
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/DnaAnalyzer.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/DnaSequenceMember.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/Nucleotide.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/SharedPtr.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/dnaSequence.h
 
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o: ../Controller/Commands/Command.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h

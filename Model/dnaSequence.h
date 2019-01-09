@@ -23,7 +23,6 @@ using std::map;
 using std::bad_alloc;
 
 
-
 class DnaSequence {
 public:
     class Interval {
@@ -63,6 +62,8 @@ public:
 
     Nucleotide operator[](int ind) const;
 
+    string getString() const;
+
     DnaSequence slicing(size_t from, size_t to) const;
 
     DnaSequence pairing() const;
@@ -97,6 +98,15 @@ bool operator!=(const DnaSequence &ds1, const DnaSequence &ds2);
 inline int DnaSequence::getLength() const {
 
     return length;
+
+}
+
+inline string DnaSequence::getString() const {
+    string str = "";
+    for (int i = 0; i < length; i++) {
+        str += aux_dna[i].getchar();
+    }
+    return str;
 
 }
 

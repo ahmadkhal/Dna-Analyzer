@@ -132,6 +132,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
@@ -139,6 +145,12 @@
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommnad.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp">

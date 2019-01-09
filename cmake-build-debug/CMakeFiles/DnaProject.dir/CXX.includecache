@@ -16,17 +16,17 @@ vector
 ../DnaAnalyzer.h
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
 
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommand.h
+ManipulationCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp
+ConcatCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommand.h
+
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
 ../Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp
-SliceCommand.h
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.h
-ManipulationCommand.h
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
 ../Model/dnaSequence.h
