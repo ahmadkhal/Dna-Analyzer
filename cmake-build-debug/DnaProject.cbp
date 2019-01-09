@@ -141,6 +141,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommnad.cpp">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp">
 			<Option target="DnaProject"/>
 		</Unit>

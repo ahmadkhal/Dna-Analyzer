@@ -63,7 +63,7 @@ public:
 
     Nucleotide operator[](int ind) const;
 
-    DnaSequence slicing(int from, int to) const;
+    DnaSequence slicing(size_t from, size_t to) const;
 
     DnaSequence pairing() const;
 
@@ -86,7 +86,7 @@ public:
 
 private:
     Nucleotide *aux_dna;
-    int length;
+    size_t length;
 
     void init_and_allocate(const char *sequence);
 

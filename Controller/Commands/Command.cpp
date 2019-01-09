@@ -6,6 +6,7 @@
 #include "Creational/LoadCommand.h"
 #include "InvalidCommand.h"
 #include "Creational/NewCommand.h"
+#include "Manipulation/SliceCommand.h"
 
 SharedPtr<Command> Command::makeCommand(const string &command) {
      if (command == "new")
@@ -18,6 +19,8 @@ SharedPtr<Command> Command::makeCommand(const string &command) {
         return SharedPtr<Command>(new PairCommand());
     else if (command == "list")
         return SharedPtr<Command>(new ListCommand());
+    else if (command == "slice")
+         return SharedPtr<Command>(new SliceCommand());
     else
         throw InvalidCommand();
 

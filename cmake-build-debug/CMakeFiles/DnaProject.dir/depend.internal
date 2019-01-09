@@ -17,6 +17,7 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/SaveCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h
+ /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
  /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
@@ -70,6 +71,16 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommnad.cpp
+ /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
+ /home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
+ /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
+ /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
+ /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o
+ /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
+ /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+ /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp
+ /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.h
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
  /home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
  /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h

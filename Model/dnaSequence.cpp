@@ -74,8 +74,9 @@ Nucleotide DnaSequence::operator[](int ind) const {
 	return aux_dna[ind];
 
 }
-DnaSequence DnaSequence::slicing(int from, int to) const {
+DnaSequence DnaSequence::slicing(size_t from, size_t to) const {
 	if (from < 0 || from > length || to < 0 || to > length || from > to) {
+		cout<<length<<" length "<<" from "<<from<<" to "<<to<<endl;
 		throw invalid_argument("Invalid argument for method slice");
 	}
 	string result;

@@ -312,6 +312,33 @@ Controller/Commands/Manipulation/PairCommnad.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.s
 .PHONY : Controller/Commands/Manipulation/PairCommnad.cpp.s
 
+Controller/Commands/Manipulation/SliceCommand.o: Controller/Commands/Manipulation/SliceCommand.cpp.o
+
+.PHONY : Controller/Commands/Manipulation/SliceCommand.o
+
+# target to build an object file
+Controller/Commands/Manipulation/SliceCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o
+.PHONY : Controller/Commands/Manipulation/SliceCommand.cpp.o
+
+Controller/Commands/Manipulation/SliceCommand.i: Controller/Commands/Manipulation/SliceCommand.cpp.i
+
+.PHONY : Controller/Commands/Manipulation/SliceCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Manipulation/SliceCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.i
+.PHONY : Controller/Commands/Manipulation/SliceCommand.cpp.i
+
+Controller/Commands/Manipulation/SliceCommand.s: Controller/Commands/Manipulation/SliceCommand.cpp.s
+
+.PHONY : Controller/Commands/Manipulation/SliceCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Manipulation/SliceCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.s
+.PHONY : Controller/Commands/Manipulation/SliceCommand.cpp.s
+
 Controller/Controller.o: Controller/Controller.cpp.o
 
 .PHONY : Controller/Controller.o
@@ -558,6 +585,9 @@ help:
 	@echo "... Controller/Commands/Manipulation/PairCommnad.o"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.i"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.s"
+	@echo "... Controller/Commands/Manipulation/SliceCommand.o"
+	@echo "... Controller/Commands/Manipulation/SliceCommand.i"
+	@echo "... Controller/Commands/Manipulation/SliceCommand.s"
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"
