@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/57/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/57/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ahmad/CLionProjects/DnaProject/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/57/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -176,6 +176,33 @@ Controller/Commands/Command.s: Controller/Commands/Command.cpp.s
 Controller/Commands/Command.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.s
 .PHONY : Controller/Commands/Command.cpp.s
+
+Controller/Commands/CommandFactory.o: Controller/Commands/CommandFactory.cpp.o
+
+.PHONY : Controller/Commands/CommandFactory.o
+
+# target to build an object file
+Controller/Commands/CommandFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.o
+.PHONY : Controller/Commands/CommandFactory.cpp.o
+
+Controller/Commands/CommandFactory.i: Controller/Commands/CommandFactory.cpp.i
+
+.PHONY : Controller/Commands/CommandFactory.i
+
+# target to preprocess a source file
+Controller/Commands/CommandFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.i
+.PHONY : Controller/Commands/CommandFactory.cpp.i
+
+Controller/Commands/CommandFactory.s: Controller/Commands/CommandFactory.cpp.s
+
+.PHONY : Controller/Commands/CommandFactory.s
+
+# target to generate assembly for a file
+Controller/Commands/CommandFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.s
+.PHONY : Controller/Commands/CommandFactory.cpp.s
 
 Controller/Commands/Control/ListCommand.o: Controller/Commands/Control/ListCommand.cpp.o
 
@@ -651,6 +678,9 @@ help:
 	@echo "... Controller/Commands/Command.o"
 	@echo "... Controller/Commands/Command.i"
 	@echo "... Controller/Commands/Command.s"
+	@echo "... Controller/Commands/CommandFactory.o"
+	@echo "... Controller/Commands/CommandFactory.i"
+	@echo "... Controller/Commands/CommandFactory.s"
 	@echo "... Controller/Commands/Control/ListCommand.o"
 	@echo "... Controller/Commands/Control/ListCommand.i"
 	@echo "... Controller/Commands/Control/ListCommand.s"

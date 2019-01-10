@@ -1,12 +1,10 @@
 #ifndef DNAPROJECT_DNAANALYZER_H
 #define DNAPROJECT_DNAANALYZER_H
 
-#include "../Model/dnaSequence.h"
+
 #include <map>
-
-#include "../Model/SharedPtr.h"
 #include "DnaSequenceMember.h"
-
+#include "../Model/SharedPtr.h"
 
 class DnaAnalyzer {
 
@@ -28,6 +26,8 @@ public:
     SharedPtr<DnaSequenceMember> getSequenceByName(const string &name) {
         return m_seqs_by_name.at(name);
     }
+
+
 
     SharedPtr<DnaSequenceMember> getDnaSequenceByArg(const string &str) {
         if (str[0] == '#') {
@@ -57,15 +57,17 @@ public:
     DnaAnalyzer() {
         m_seq_count = 1;
 
+
     }
 
 private:
 
 
-    static DnaAnalyzer *m_ref;
+    std::map<string, SharedPtr<DnaSequenceMember> >
+            m_seqs_by_name;
+    std::map<size_t, SharedPtr<DnaSequenceMember> >
+            m_seqs_by_id;
 
-    std::map<string, SharedPtr<DnaSequenceMember> > m_seqs_by_name;
-    std::map<size_t, SharedPtr<DnaSequenceMember> > m_seqs_by_id;
     size_t m_seq_count;
 
 

@@ -1,9 +1,9 @@
 
-#include "ManipulationCommand.h"
 
-#ifndef __DNAPROJECT_SLICECOMMAND_H
+#ifndef DNAPROJECT_SLICECOMMAND_H
 #define DNAPROJECT_SLICECOMMAND_H
 
+#include "ManipulationCommand.h"
 
 
 

@@ -96,6 +96,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ControlCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>

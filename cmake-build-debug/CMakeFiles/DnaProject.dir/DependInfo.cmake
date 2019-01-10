@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/DupCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o"

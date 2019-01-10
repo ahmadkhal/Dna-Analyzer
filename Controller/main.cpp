@@ -21,9 +21,10 @@ int main(int argc, char *argv[]) {
         if (arg_vector[0] == "exit") {
             break;
         }
-        result = Command::makeCommand(arg_vector[0])->execute(arg_vector,controller->getDnaAnalyzer());
+        result = controller->make_command(arg_vector[0])->execute(arg_vector,
+                                                                  controller->getDnaAnalyzer());
         controller->getView()->print(result);
-      
+
     }
     cout << "------ Good Bye ------" << endl;
     return 0;

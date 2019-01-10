@@ -9,7 +9,6 @@ class ManipulationCommand : public Command {
 public:
 
 
-
 };
 
 
