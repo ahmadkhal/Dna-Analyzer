@@ -7,6 +7,6 @@ class ReplaceCommand : public ManipulationCommand {
 public:
     string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer);
 
-private:
+
 };
 #endif //DNAPROJECT_REPLACECOMMAND_H

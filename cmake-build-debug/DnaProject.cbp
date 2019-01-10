@@ -108,6 +108,12 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/CreationalCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/DupCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/DupCommand.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp">
 			<Option target="DnaProject"/>
 		</Unit>

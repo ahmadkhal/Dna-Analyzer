@@ -24,12 +24,12 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
 
     SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
     DnaSequence sliced_dna = sp->getDnaSequence().slicing(from, to);
-    if (strs[2] != ":") {
+    if (strs.size() == 4) {
         sp->setDnaSequence(sliced_dna);
         oss << "[" << sp->getID() << "] " << sliced_dna << ": " << sp->getName();
     } else {
         string sliced_name;
-        if (strs[3] == "@@") {
+        if (strs[5] == "@@") {
 
             sliced_name = choose_name(sp->getName(), dna_analyzer);
 
@@ -39,7 +39,7 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
         size_t sliced_id = dna_analyzer->getNextCount();
         SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(sliced_dna, sliced_name, sliced_id));
         dna_analyzer->pushNewSeq(sliced_id, sliced_name, new_sp);
-        oss << *new_sp << sliced_name;
+        oss << *new_sp ;
 
     }
     return oss.str();

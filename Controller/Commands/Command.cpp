@@ -9,9 +9,13 @@
 #include "Manipulation/SliceCommand.h"
 #include "Manipulation/ReplaceCommand.h"
 #include "Manipulation/ConcatCommand.h"
+#include "Creational/DupCommand.h"
 
 SharedPtr<Command> Command::makeCommand(const string &command) {
-     if (command == "new")
+//    MapOfCommands<String, COnstructor> myMap
+//    myCstr = MyMap.FIND(cmd)
+//            myCtrs.createComand()
+    if (command == "new")
         return SharedPtr<Command>(new NewCommand());
     else if (command == "save")
         return SharedPtr<Command>(new SaveCommand());
@@ -22,18 +26,15 @@ SharedPtr<Command> Command::makeCommand(const string &command) {
     else if (command == "list")
         return SharedPtr<Command>(new ListCommand());
     else if (command == "slice")
-         return SharedPtr<Command>(new SliceCommand());
-     else if (command == "replace")
-         return SharedPtr<Command>(new ReplaceCommand());
-     else if (command == "concat")
-         return SharedPtr<Command>(new ConcatCommand());
+        return SharedPtr<Command>(new SliceCommand());
+    else if (command == "replace")
+        return SharedPtr<Command>(new ReplaceCommand());
+    else if (command == "concat")
+        return SharedPtr<Command>(new ConcatCommand());
+    else if (command == "dup")
+        return SharedPtr<Command>(new DupCommand());
     else
         throw InvalidCommand();
-
-
-
-
-
 
 
 }

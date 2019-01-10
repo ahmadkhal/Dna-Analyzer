@@ -204,6 +204,33 @@ Controller/Commands/Control/ListCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.s
 .PHONY : Controller/Commands/Control/ListCommand.cpp.s
 
+Controller/Commands/Creational/DupCommand.o: Controller/Commands/Creational/DupCommand.cpp.o
+
+.PHONY : Controller/Commands/Creational/DupCommand.o
+
+# target to build an object file
+Controller/Commands/Creational/DupCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o
+.PHONY : Controller/Commands/Creational/DupCommand.cpp.o
+
+Controller/Commands/Creational/DupCommand.i: Controller/Commands/Creational/DupCommand.cpp.i
+
+.PHONY : Controller/Commands/Creational/DupCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Creational/DupCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.i
+.PHONY : Controller/Commands/Creational/DupCommand.cpp.i
+
+Controller/Commands/Creational/DupCommand.s: Controller/Commands/Creational/DupCommand.cpp.s
+
+.PHONY : Controller/Commands/Creational/DupCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Creational/DupCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.s
+.PHONY : Controller/Commands/Creational/DupCommand.cpp.s
+
 Controller/Commands/Creational/LoadCommand.o: Controller/Commands/Creational/LoadCommand.cpp.o
 
 .PHONY : Controller/Commands/Creational/LoadCommand.o
@@ -627,6 +654,9 @@ help:
 	@echo "... Controller/Commands/Control/ListCommand.o"
 	@echo "... Controller/Commands/Control/ListCommand.i"
 	@echo "... Controller/Commands/Control/ListCommand.s"
+	@echo "... Controller/Commands/Creational/DupCommand.o"
+	@echo "... Controller/Commands/Creational/DupCommand.i"
+	@echo "... Controller/Commands/Creational/DupCommand.s"
 	@echo "... Controller/Commands/Creational/LoadCommand.o"
 	@echo "... Controller/Commands/Creational/LoadCommand.i"
 	@echo "... Controller/Commands/Creational/LoadCommand.s"

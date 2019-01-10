@@ -9,6 +9,7 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Comma
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Control/ControlCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Control/ListCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Creational/CreationalCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Creational/DupCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Creational/LoadCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/Creational/NewCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o: ../Controller/Commands/InvalidCommand.h
@@ -34,6 +35,16 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o: ../Cont
 CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o: ../Model/Nucleotide.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o: ../Model/SharedPtr.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o: ../Model/dnaSequence.h
+
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/Commands/Command.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/Commands/Creational/CreationalCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/Commands/Creational/DupCommand.cpp
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/Commands/Creational/DupCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/DnaAnalyzer.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Controller/DnaSequenceMember.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Model/Nucleotide.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Model/SharedPtr.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o: ../Model/dnaSequence.h
 
 CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o: ../Controller/Commands/Command.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o: ../Controller/Commands/Creational/CreationalCommand.h

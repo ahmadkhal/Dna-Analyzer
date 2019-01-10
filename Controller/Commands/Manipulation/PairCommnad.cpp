@@ -26,20 +26,22 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
 
     SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
     DnaSequence seq_after_pair = sp->getDnaSequence().pairing();
-    if (strs[2] != ":") {
+    if (strs.size() == 2) {
         sp->setDnaSequence(seq_after_pair);
+        oss << *sp;
     } else {
         string paired_name;
         if (strs[3] == "@@") {
 
             paired_name = choose_name(sp->getName(), dna_analyzer);
 
+
         } else {
             paired_name= strs[3];
         }
-        size_t sliced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(seq_after_pair, paired_name, sliced_id));
-        dna_analyzer->pushNewSeq(sliced_id, paired_name, new_sp);
+        size_t paired_id = dna_analyzer->getNextCount();
+        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(seq_after_pair, paired_name, paired_id));
+        dna_analyzer->pushNewSeq(paired_id, paired_name, new_sp);
         oss << *new_sp ;
 
     }

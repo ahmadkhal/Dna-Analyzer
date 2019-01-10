@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o"
+  "CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o"
   "DnaProject.pdb"
   "DnaProject"
 )

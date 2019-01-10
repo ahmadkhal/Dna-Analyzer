@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
             new Controller(SharedPtr<View>(new CLI()), SharedPtr<DnaAnalyzer>(new DnaAnalyzer()),
                            SharedPtr<CommandParser>(new CommandParser())));
 
-cout<<"are you here?"<<endl;
+
     string cmdline;
     string result;
 
