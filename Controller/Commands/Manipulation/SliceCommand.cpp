@@ -1,5 +1,5 @@
 #include "SliceCommand.h"
-
+#include"../../../Model/DnaAnalyzer.h"
 
 static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
     size_t count = 0;
@@ -22,7 +22,7 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
     size_t id;
 
 
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
+    SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
     DnaSequence sliced_dna = sp->getDnaSequence().slicing(from, to);
     if (strs.size() == 4) {
         sp->setDnaSequence(sliced_dna);
@@ -37,7 +37,7 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
             sliced_name = strs[3];
         }
         size_t sliced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(sliced_dna, sliced_name, sliced_id));
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(sliced_dna, sliced_name, sliced_id));
         dna_analyzer->pushNewSeq(sliced_id, sliced_name, new_sp);
         oss << *new_sp ;
 

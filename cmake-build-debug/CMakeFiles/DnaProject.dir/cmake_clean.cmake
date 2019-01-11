@@ -13,12 +13,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/main.cpp.o"
-  "CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.o"
+  "CMakeFiles/DnaProject.dir/Model/DnaData/DnaSequenceData.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o"
-  "CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.o"
   "DnaProject.pdb"
   "DnaProject"
 )

@@ -5,7 +5,7 @@
 #include "LoadCommand.h"
 
 #include "../../../Model/SharedPtr.h"
-#include "../../DnaAnalyzer.h"
+#include "../../../Model/DnaAnalyzer.h"
 #include "../../../Model/FileWriter.h"
 #include "../../../Model/FIleReader.h"
 
@@ -21,11 +21,11 @@ string LoadCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
     }
     string sequence_string = FileReader::readFromFile(strs[1]);
     size_t id = dna_analyzer->getNextCount();
-    SharedPtr<DnaSequenceMember> sp(new DnaSequenceMember(DnaSequence(sequence_string), arg2, id));
+    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(DnaSequence(sequence_string), arg2, id));
     dna_analyzer->pushNewSeq(id, arg2, sp);
     size_t sequence_size = sequence_string.size();
     if (sequence_string.size() > 40) {
-        sequence_string =sp->formated_string();
+        sequence_string =sp->formatted_string();
                 sequence_string.substr(0, 32) + "..." + sequence_string.substr(sequence_size - 3, sequence_size);
     }
     oss << "[" << id << "] " << arg2 << ": " << sequence_string;

@@ -1,4 +1,5 @@
 #include "ConcatCommand.h"
+#include"../../../Model/DnaAnalyzer.h"
 
 static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
     size_t count = 0;
@@ -16,7 +17,7 @@ string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_a
 
     ostringstream oss;
 
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
+    SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
 
     size_t i;
     string concat_str = dna_analyzer->getDnaSequenceByArg(strs[1])->getDnaSequence().getString();
@@ -41,7 +42,7 @@ string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_a
             replaced_name = strs[i + 1].substr(1, strs[3].size());
         }
         size_t replaced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(DnaSequence(concat_str), replaced_name, replaced_id));
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(DnaSequence(concat_str), replaced_name, replaced_id));
         dna_analyzer->pushNewSeq(replaced_id, replaced_name, new_sp);
         oss << *new_sp;
 

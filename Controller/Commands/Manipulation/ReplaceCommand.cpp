@@ -1,6 +1,6 @@
 
 #include"ReplaceCommand.h"
-
+#include"../../../Model/DnaAnalyzer.h"
 
 static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
     size_t count = 0;
@@ -16,7 +16,7 @@ static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dn
 string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
     ostringstream oss;
 
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
+    SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
     string dna_sequence_str = sp->getDnaSequence().getString();
     size_t i;
 
@@ -39,7 +39,7 @@ string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_
             replaced_name = strs[i+1].substr(1,strs[3].size());
         }
         size_t replaced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceMember> new_sp(new DnaSequenceMember(replaced_seq, replaced_name, replaced_id));
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(replaced_seq, replaced_name, replaced_id));
         dna_analyzer->pushNewSeq(replaced_id, replaced_name, new_sp);
         oss << *new_sp ;
 

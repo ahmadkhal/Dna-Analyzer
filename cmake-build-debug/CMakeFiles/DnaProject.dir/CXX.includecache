@@ -19,8 +19,6 @@ vector
 -
 ../../Model/SharedPtr.h
 /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-../DnaAnalyzer.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.h
 Manipulation/PairCommand.h
@@ -99,26 +97,12 @@ ManipulationCommand.h
 /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
 ../View/View.h
 /home/ahmad/CLionProjects/DnaProject/View/View.h
-DnaAnalyzer.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
+../Model/DnaAnalyzer.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h
 CommandParser.h
 /home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.h
 Commands/CommandFactory.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h
-map
--
-DnaSequenceMember.h
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
-../Model/SharedPtr.h
-/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h
-sstream
--
-../Model/dnaSequence.h
-/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/main.cpp
 Controller.h
@@ -127,6 +111,28 @@ Controller.h
 /home/ahmad/CLionProjects/DnaProject/View/CLI.h
 Commands/Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
+
+/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h
+map
+-
+DnaData/DnaSequenceData.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
+SharedPtr.h
+/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
+../Controller/Commands/CommandFactory.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.h
+
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDnaData.h
+string
+-
+
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
+sstream
+-
+../dnaSequence.h
+/home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
+AbstractDnaData.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDnaData.h
 
 /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
 iostream

@@ -8,8 +8,8 @@
 #include <string>
 #include <vector>
 #include "../../Model/SharedPtr.h"
-#include "../DnaAnalyzer.h"
 
+class DnaAnalyzer;
 
 using namespace std;
 

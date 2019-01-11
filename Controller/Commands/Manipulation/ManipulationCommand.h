@@ -13,3 +13,6 @@ public:
 
 
 #endif //DNAPROJECT_MANIPULATIONCOMMAND_H
+
+
+

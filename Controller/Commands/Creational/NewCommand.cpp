@@ -1,7 +1,7 @@
 
 #include "NewCommand.h"
 #include <sstream>
-
+#include"../../../Model/DnaAnalyzer.h"
 
 
 string NewCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
@@ -15,7 +15,7 @@ string NewCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_anal
         arg2_string_stream << "seq" << id;
     }
 
-    SharedPtr<DnaSequenceMember> sp(new DnaSequenceMember(DnaSequence(arg1), arg2_string_stream.str(), id));
+    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(DnaSequence(arg1), arg2_string_stream.str(), id));
     dna_analyzer->pushNewSeq(id, arg2_string_stream.str(),sp);
     ostringstream oss;
     oss << "[" << id << "] " << arg2_string_stream.str() << " " << arg1;

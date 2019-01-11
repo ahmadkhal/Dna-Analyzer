@@ -1,4 +1,4 @@
-#include "../../DnaAnalyzer.h"
+#include "../../../Model/DnaAnalyzer.h"
 #include "SaveCommand.h"
 #include "../../../Model/FileWriter.h"
 #include <sstream>
@@ -6,7 +6,7 @@
 string SaveCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
     size_t id = atoi(strs[1].substr(1,strs.size()).c_str());
 
-    SharedPtr<DnaSequenceMember> sp(dna_analyzer->getSequenceById(id));
+    SharedPtr<DnaSequenceData> sp(dna_analyzer->getSequenceById(id));
     ostringstream oss;
 
     string arg2;

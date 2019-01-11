@@ -96,9 +96,6 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.cpp">
-			<Option target="DnaProject"/>
-		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.h">
 			<Option target="DnaProject"/>
 		</Unit>
@@ -177,16 +174,22 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Controller.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/DnaAnalyzer.h">
-			<Option target="DnaProject"/>
-		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.cpp">
-			<Option target="DnaProject"/>
-		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.h">
-			<Option target="DnaProject"/>
-		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/main.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDnaData.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/SliceDecorator.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.cpp">

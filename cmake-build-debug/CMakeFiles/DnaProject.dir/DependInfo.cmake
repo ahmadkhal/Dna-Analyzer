@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/CommandParser.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Command.cpp.o"
-  "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/CommandFactory.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/CommandFactory.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Control/ListCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/DupCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Creational/LoadCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o"
@@ -17,8 +16,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/SliceCommand.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/Controller.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o"
-  "/home/ahmad/CLionProjects/DnaProject/Controller/DnaSequenceMember.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/DnaSequenceMember.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Controller/main.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/main.cpp.o"
+  "/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/DnaData/DnaSequenceData.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/FIleReader.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/FileWriter.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.o"
   "/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.cpp" "/home/ahmad/CLionProjects/DnaProject/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o"
