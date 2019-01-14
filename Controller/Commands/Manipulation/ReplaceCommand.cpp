@@ -1,6 +1,7 @@
 
 #include"ReplaceCommand.h"
 #include"../../../Model/DnaAnalyzer.h"
+#include "../../../Model/DnaData/ReplaceDecorator.h"
 
 static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
     size_t count = 0;
@@ -17,31 +18,37 @@ string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_
     ostringstream oss;
 
     SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
-    string dna_sequence_str = sp->getDnaSequence().getString();
+    std::map<size_t, string> replacement_map;
     size_t i;
 
-    for (i = 2; i < strs.size() - 2; i += 2) {
-        dna_sequence_str[atoi(strs[i].c_str())] = (strs[i + 1])[0];
-    }
-    DnaSequence replaced_seq=DnaSequence(dna_sequence_str);
-    if (strs[i ] != ":") {
-        dna_sequence_str[atoi(strs[i].c_str())] = (strs[i +1])[0];
+    for (i = 2; i < strs.size(); i += 2) {
+        replacement_map[atoi(strs[i].c_str())] = (strs[i + 1])[0];
 
-        sp->setDnaSequence(replaced_seq);
-        oss << "[" << sp->getID() << "] " << dna_sequence_str << ": " << sp->getName();
+
+        if (strs[i] == ":") {
+            break;
+        }
+    }
+
+    SharedPtr<AbstractDna> sd = SharedPtr<AbstractDna>(new ReplaceDecorator(sp->getDnaSequence(), replacement_map));
+
+    if (strs.size() == i) {
+
+        sp->setDnaSequence(sd);
+        oss << "[" << sp->getID() << "] " << sp->getString() << ": " << sp->getName();
     } else {
         string replaced_name;
-        if (strs[i+1] == "@@") {
+        if (strs[i + 1] == "@@") {
 
-            replaced_name= choose_name(sp->getName(), dna_analyzer);
+            replaced_name = choose_name(sp->getName(), dna_analyzer);
 
         } else {
-            replaced_name = strs[i+1].substr(1,strs[3].size());
+            replaced_name = strs[i + 1].substr(1, strs[3].size());
         }
         size_t replaced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(replaced_seq, replaced_name, replaced_id));
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(sd, replaced_name, replaced_id));
         dna_analyzer->pushNewSeq(replaced_id, replaced_name, new_sp);
-        oss << *new_sp ;
+        oss << *new_sp;
 
     }
     return oss.str();

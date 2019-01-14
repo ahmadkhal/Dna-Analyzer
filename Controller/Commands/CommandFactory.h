@@ -79,12 +79,12 @@ public:
 //    }
 //};
 
-//class ReplaceCommandFactory : public CommandFactory {
-//public:
-//    SharedPtr<Command> make_command() {
-//        return SharedPtr<Command>(new ReplaceCommand());
-//    }
-//};
+class ReplaceCommandFactory : public CommandFactory {
+public:
+    SharedPtr<Command> make_command() {
+        return SharedPtr<Command>(new ReplaceCommand());
+    }
+};
 
 
 #endif //DNAPROJECT_COMMANDFACTORY_H

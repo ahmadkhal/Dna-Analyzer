@@ -150,7 +150,29 @@ CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ..
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Model/SharedPtr.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o: ../Model/dnaSequence.h
 
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Command.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/CommandFactory.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Control/ControlCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Control/ListCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Creational/CreationalCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Creational/DupCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Creational/LoadCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Creational/NewCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Management/ManagementCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Management/SaveCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ConcatCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ManipulationCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/PairCommand.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.cpp
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/ReplaceCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Controller/Commands/Manipulation/SliceCommand.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/DnaAnalyzer.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/DnaData/AbstractDna.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/DnaData/DnaSequenceData.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/DnaData/ReplaceDecorator.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/Nucleotide.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/SharedPtr.h
+CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o: ../Model/dnaSequence.h
 
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o: ../Controller/Commands/Command.h
 CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o: ../Controller/Commands/CommandFactory.h
