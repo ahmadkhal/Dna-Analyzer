@@ -78,7 +78,15 @@ ConcatCommand.h
 ../../../Model/DnaData/ConcatDecorator.h
 /home/ahmad/CLionProjects/DnaProject/Model/DnaData/ConcatDecorator.h
 
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.cpp
+ManipulationCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+../../../Model/DnaAnalyzer.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+sstream
+-
 ../Command.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Command.h
 
@@ -115,10 +123,6 @@ AbstractDna.h
 /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
 ../Nucleotide.h
 /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
-
-/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp
-DnaSequenceData.h
-/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
 
 /home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
 sstream

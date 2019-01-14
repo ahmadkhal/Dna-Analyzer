@@ -3,16 +3,7 @@
 #include"../../../Model/DnaAnalyzer.h"
 #include "../../../Model/DnaData/ReplaceDecorator.h"
 
-static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
-    size_t count = 0;
-    ostringstream oss_name;
-    do {
-        oss_name.str("");
-        ++count;
-        oss_name << sequence_name << "_r" << count;
-    } while (dna_analyzer->check_if_name_exist(oss_name.str()));
-    return oss_name.str();
-}
+
 
 string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
     ostringstream oss;
@@ -40,7 +31,7 @@ string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_
         string replaced_name;
         if (strs[i + 1] == "@@") {
 
-            replaced_name = choose_name(sp->getName(), dna_analyzer);
+            replaced_name = ManipulationCommand::choose_name(sp->getName(), dna_analyzer,"_r");
 
         } else {
             replaced_name = strs[i + 1].substr(1, strs[3].size());

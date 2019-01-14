@@ -7,16 +7,7 @@
 #include <sstream>
 
 
-static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
-    size_t count = 0;
-    ostringstream oss_name;
-    do {
-        oss_name.str("");
-        ++count;
-        oss_name << sequence_name << "_p" << count;
-    } while (dna_analyzer->check_if_name_exist(oss_name.str()));
-    return oss_name.str();
-}
+
 
 string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
 
@@ -37,7 +28,7 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
         string paired_name;
         if (strs[3] == "@@") {
 
-            paired_name = choose_name(sp->getName(), dna_analyzer);
+            paired_name = ManipulationCommand::choose_name(sp->getName(), dna_analyzer,"_p");
 
 
         } else {

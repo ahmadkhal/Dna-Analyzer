@@ -2,16 +2,7 @@
 #include"../../../Model/DnaAnalyzer.h"
 #include"../../../Model/DnaData/SliceDecorator.h"
 
-static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
-    size_t count = 0;
-    ostringstream oss_name;
-    do {
-        oss_name.str("");
-        ++count;
-        oss_name << sequence_name << "_s" << count;
-    } while (dna_analyzer->check_if_name_exist(oss_name.str()));
-    return oss_name.str();
-}
+
 
 
 string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
@@ -34,7 +25,7 @@ string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_an
         string sliced_name;
         if (strs[5] == "@@") {
 
-            sliced_name = choose_name(sp->getName(), dna_analyzer);
+            sliced_name =ManipulationCommand::choose_name(sp->getName(), dna_analyzer,"_s");
 
         } else {
             sliced_name = strs[3];

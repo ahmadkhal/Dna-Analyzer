@@ -30,6 +30,7 @@
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" afterDir="false" />
@@ -38,27 +39,40 @@
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/main.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/sample.raw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Command.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Command.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CommandParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CommandParser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CommandParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CommandParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/DnaAnalyzer.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/asd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/dnaSequenceMember.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/DnaAnalyzer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaAnalyzer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DnaProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DnaProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DnaProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DnaProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,24 +99,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="38" />
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#77#101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="27" column="84" lean-forward="true" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-              <folding>
-                <element signature="e#76#100#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,19 +114,7 @@
         <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-              <folding>
-                <element signature="e#79#97#0" expanded="true" />
-              </folding>
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -132,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="335">
+              <caret line="31" column="84" lean-forward="true" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -142,43 +132,79 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/dnaSequence.cpp">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="227" column="17" selection-start-line="227" selection-start-column="17" selection-end-line="227" selection-end-column="17" />
+            <state relative-caret-position="190">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/CommandFactory.h">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="152">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
               <folding>
-                <element signature="e#76#113#0" expanded="true" />
+                <element signature="e#85#103#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Model/DnaAnalyzer.h">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="71" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="71" />
+            <state relative-caret-position="114">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="40" />
               <folding>
-                <element signature="e#68#82#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="570">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="93" />
+              <folding>
+                <element signature="e#2#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding>
+                <element signature="e#99#116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
+              <folding>
+                <element signature="e#1#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -207,7 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.h" />
         <option value="$PROJECT_DIR$/Controller/CommandParser.h" />
         <option value="$PROJECT_DIR$/Controller/DnaSequenceMember.cpp" />
         <option value="$PROJECT_DIR$/Controller/DnaSequenceMember.h" />
@@ -227,8 +252,6 @@
         <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceMember.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Control/ListCommand.cpp" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" />
-        <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Command.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
@@ -245,18 +268,21 @@
         <option value="$PROJECT_DIR$/Model/DnaData/SliceDecorator.h" />
         <option value="$PROJECT_DIR$/Model/SharedPtr.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" />
         <option value="$PROJECT_DIR$/Model/DnaData/PairDecorator.h" />
         <option value="$PROJECT_DIR$/Model/DnaData/AbstractDna.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h" />
         <option value="$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" />
         <option value="$PROJECT_DIR$/Model/DnaAnalyzer.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" />
         <option value="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" />
+        <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" />
       </list>
     </option>
@@ -376,7 +402,7 @@
       <workItem from="1547133487126" duration="10220000" />
       <workItem from="1547143982901" duration="3842000" />
       <workItem from="1547196025295" duration="37663000" />
-      <workItem from="1547364260397" duration="43292000" />
+      <workItem from="1547364260397" duration="44371000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1546168109600</created>
@@ -396,7 +422,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246532000" />
+    <option name="totallyTimeSpent" value="247611000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,7 +438,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14831212" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14831212" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4975097" weight="0.32876712" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49142224" weight="0.26241902" />
@@ -426,7 +452,7 @@
       <window_info anchor="bottom" id="CMake" order="9" sideWeight="0.4986165" weight="0.32829374" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.4986165" weight="0.32829374" />
-      <window_info active="true" anchor="bottom" id="Run" order="12" sideWeight="0.4355285" visible="true" weight="0.26349893" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4355285" visible="true" weight="0.26349893" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -483,7 +509,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp</url>
-          <line>25</line>
+          <line>16</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -493,8 +519,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp</url>
-          <line>29</line>
+          <line>20</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h</url>
+          <line>17</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -516,7 +547,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Controller/DnaSequenceMember.cpp" />
     <entry file="file://$PROJECT_DIR$/Controller/DnaSequenceMember.h" />
     <entry file="file://$PROJECT_DIR$/Controller/DnaAnalyzer.h" />
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.cpp">
@@ -632,23 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Controller.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -703,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/ostream">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -727,51 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/DnaData/AbstractDna.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/SharedPtr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="107" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="64" />
-          <folding>
-            <element signature="e#2#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,16 +780,6 @@
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="116" />
-          <folding>
-            <element signature="e#1#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -852,10 +807,17 @@
     <entry file="file://$PROJECT_DIR$/Model/DnaAnalyzer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
-          <caret line="71" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="71" />
+          <caret line="71" selection-start-line="62" selection-start-column="6" selection-end-line="71" />
           <folding>
             <element signature="e#68#82#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SharedPtr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -869,13 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -886,20 +841,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
-          <caret line="27" column="84" lean-forward="true" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
           <folding>
             <element signature="e#76#100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#85#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
+          <folding>
+            <element signature="e#1#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="93" />
+          <folding>
+            <element signature="e#2#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="335">
+          <caret line="31" column="84" lean-forward="true" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -339,6 +339,33 @@ Controller/Commands/Manipulation/ConcatCommnad.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.s
 .PHONY : Controller/Commands/Manipulation/ConcatCommnad.cpp.s
 
+Controller/Commands/Manipulation/ManipulationCommand.o: Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.o
+
+# target to build an object file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.o
+
+Controller/Commands/Manipulation/ManipulationCommand.i: Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.i
+
+Controller/Commands/Manipulation/ManipulationCommand.s: Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Manipulation/ManipulationCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+.PHONY : Controller/Commands/Manipulation/ManipulationCommand.cpp.s
+
 Controller/Commands/Manipulation/PairCommnad.o: Controller/Commands/Manipulation/PairCommnad.cpp.o
 
 .PHONY : Controller/Commands/Manipulation/PairCommnad.o
@@ -669,6 +696,9 @@ help:
 	@echo "... Controller/Commands/Manipulation/ConcatCommnad.o"
 	@echo "... Controller/Commands/Manipulation/ConcatCommnad.i"
 	@echo "... Controller/Commands/Manipulation/ConcatCommnad.s"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.o"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.i"
+	@echo "... Controller/Commands/Manipulation/ManipulationCommand.s"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.o"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.i"
 	@echo "... Controller/Commands/Manipulation/PairCommnad.s"

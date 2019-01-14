@@ -147,6 +147,9 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.cpp">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h">
 			<Option target="DnaProject"/>
 		</Unit>

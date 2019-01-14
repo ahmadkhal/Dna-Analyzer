@@ -2,16 +2,6 @@
 #include"../../../Model/DnaAnalyzer.h"
 #include "../../../Model/DnaData/ConcatDecorator.h"
 
-static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer) {
-    size_t count = 0;
-    ostringstream oss_name;
-    do {
-        oss_name.str("");
-        ++count;
-        oss_name << sequence_name << "_s" << count;
-    } while (dna_analyzer->check_if_name_exist(oss_name.str()));
-    return oss_name.str();
-}
 
 string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
 
@@ -36,17 +26,17 @@ string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_a
         sp->setDnaSequence(sd);
         oss << *sp;
     } else {
-        string replaced_name;
+        string concat_name;
         if (strs[i+1 ] == "@@") {
 
-            replaced_name = choose_name(sp->getName(), dna_analyzer);
+            concat_name = ManipulationCommand::choose_name(sp->getName(), dna_analyzer,"_c");
 
         } else {
-            replaced_name = strs[i + 1].substr(1, strs[3].size());
+            concat_name = strs[i + 1].substr(1, strs[3].size());
         }
-        size_t replaced_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(sd, replaced_name, replaced_id));
-        dna_analyzer->pushNewSeq(replaced_id, replaced_name, new_sp);
+        size_t concat_id = dna_analyzer->getNextCount();
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(sd, concat_name, concat_id));
+        dna_analyzer->pushNewSeq(concat_id, concat_name, new_sp);
         oss << *new_sp;
 
     }
