@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <exception>
 #include "Nucleotide.h"
+#include "DnaData/AbstractDna.h"
 #include <map>
 #include <iterator>
 #include <assert.h>
@@ -23,7 +24,7 @@ using std::map;
 using std::bad_alloc;
 
 
-class DnaSequence {
+class DnaSequence : public AbstractDna{
 public:
     class Interval {
 
@@ -58,11 +59,16 @@ public:
 
     DnaSequence &operator=(const string &str);
 
-    Nucleotide &operator[](int ind);
+    Nucleotide &operator[](size_t index);
 
-    Nucleotide operator[](int ind) const;
+    Nucleotide operator[](size_t index) const;
 
-    string getString() const;
+     string getString()const ;
+
+
+    size_t size()const{
+        return length;
+    }
 
     DnaSequence slicing(size_t from, size_t to) const;
 
@@ -101,12 +107,22 @@ inline int DnaSequence::getLength() const {
 
 }
 
-inline string DnaSequence::getString() const {
+inline  string DnaSequence::getString() const {
     string str = "";
     for (int i = 0; i < length; i++) {
         str += aux_dna[i].getchar();
     }
     return str;
+
+}
+
+
+inline Nucleotide &DnaSequence::operator[](size_t index) { //---------------should return int&---------------
+    return aux_dna[index];
+}
+
+inline Nucleotide DnaSequence::operator[](size_t index) const {
+    return aux_dna[index];
 
 }
 

@@ -2,6 +2,7 @@
 
 #include "PairCommand.h"
 #include "../../../Model/DnaAnalyzer.h"
+#include "../../../Model/DnaData/PairDecorator.h"
 #include <stdlib.h>
 #include <sstream>
 
@@ -25,9 +26,12 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
 
 
     SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
-    DnaSequence seq_after_pair = sp->getDnaSequence().pairing();
+
+    SharedPtr<AbstractDna> sd = SharedPtr<AbstractDna>(new PairDecorator(sp->getDnaSequence()));
+
+
     if (strs.size() == 2) {
-        sp->setDnaSequence(seq_after_pair);
+        sp->setDnaSequence(sd);
         oss << *sp;
     } else {
         string paired_name;
@@ -37,12 +41,12 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
 
 
         } else {
-            paired_name= strs[3];
+            paired_name = strs[3];
         }
         size_t paired_id = dna_analyzer->getNextCount();
-        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(seq_after_pair, paired_name, paired_id));
+        SharedPtr<DnaSequenceData> new_sp(new DnaSequenceData(sd, paired_name, paired_id));
         dna_analyzer->pushNewSeq(paired_id, paired_name, new_sp);
-        oss << *new_sp ;
+        oss << *new_sp;
 
     }
     return oss.str();

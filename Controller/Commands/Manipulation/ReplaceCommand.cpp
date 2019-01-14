@@ -8,7 +8,7 @@ static string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dn
     do {
         oss_name.str("");
         ++count;
-        oss_name << sequence_name << "_s" << count;
+        oss_name << sequence_name << "_r" << count;
     } while (dna_analyzer->check_if_name_exist(oss_name.str()));
     return oss_name.str();
 }

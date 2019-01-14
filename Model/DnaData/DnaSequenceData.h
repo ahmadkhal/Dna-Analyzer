@@ -3,33 +3,38 @@
 
 #include <sstream>
 #include "../dnaSequence.h"
-#include "AbstractDnaData.h"
+
+#include "../SharedPtr.h"
 
 
-class DnaSequenceData : public AbstractDnaData {
+class DnaSequenceData {
 public:
 
 
-    DnaSequenceData(DnaSequence seq, const string name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
-
+    DnaSequenceData(SharedPtr<AbstractDna> seq, const string name, size_t id) : m_seq(seq), m_name(name), m_id(id) {
     }
 
     string formatted_string() const;
 
-    void manipulate() {
-        cout << "We got here" << endl;
+
+    SharedPtr<AbstractDna> getDnaSequence();
+
+    void setDnaSequence(SharedPtr<AbstractDna> ds);
+
+    string getString() {
+        string str = "";
+        for (size_t ind = 0; ind < m_seq->size(); ind++) {
+            str += (*m_seq)[ind].getchar();
+        }
+        return str;
     }
-
-    const DnaSequence &getDnaSequence() const;
-
-    void setDnaSequence(const DnaSequence &ds);
 
     string getName() const;
 
     size_t getID() const;
 
 private:
-    DnaSequence m_seq;
+    SharedPtr<AbstractDna> m_seq;
     string m_name;
     size_t m_id;
 
@@ -38,12 +43,11 @@ private:
 
 ostream &operator<<(ostream &os, const DnaSequenceData &dnaSequenceMember);
 
-inline const DnaSequence &DnaSequenceData::getDnaSequence() const {
+inline SharedPtr<AbstractDna> DnaSequenceData::getDnaSequence() {
     return m_seq;
 }
-
-inline void DnaSequenceData::setDnaSequence(const DnaSequence &ds) {
-    m_seq = ds;
+inline void  DnaSequenceData::setDnaSequence(SharedPtr<AbstractDna> ds){
+    m_seq=ds;
 }
 
 inline string DnaSequenceData::getName() const {

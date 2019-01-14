@@ -14,8 +14,10 @@ string NewCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_anal
     } else {
         arg2_string_stream << "seq" << id;
     }
+    SharedPtr<AbstractDna> dna_sp(new DnaSequence(arg1));
 
-    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(DnaSequence(arg1), arg2_string_stream.str(), id));
+    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(dna_sp, arg2_string_stream.str(), id));
+
     dna_analyzer->pushNewSeq(id, arg2_string_stream.str(),sp);
     ostringstream oss;
     oss << "[" << id << "] " << arg2_string_stream.str() << " " << arg1;

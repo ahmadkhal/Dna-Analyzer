@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include<exception>
 #include <stdexcept>
+#include <iostream>
 
 template<typename T>
 class SharedPtr {
@@ -83,7 +84,7 @@ SharedPtr<T> &SharedPtr<T>::operator=(T *p) {
     if (*m_count == 1)
         delete m_ptr;
     else {
-        *m_count--;
+        --*m_count;
         m_count = new size_t;
         *m_count = 1;
     }
@@ -94,8 +95,10 @@ SharedPtr<T> &SharedPtr<T>::operator=(T *p) {
 template<typename T>
 SharedPtr<T>::SharedPtr(const SharedPtr<T> &sp) {
     m_count = sp.getCount();
+
     ++*m_count;
     m_ptr = sp.getPtr();
+
 
 }
 
@@ -108,11 +111,11 @@ SharedPtr<T> &SharedPtr<T>::operator=(const SharedPtr<T> &sp) {
         delete m_ptr;
         delete m_count;    /////check this!!!!!!!!!!
         m_count = sp.getCount();
-        *m_count++;
+        ++*m_count;
     } else {
-        *m_count--;
+        --*m_count;
         m_count = sp.getCount();
-        *m_count++;
+        ++*m_count;
     }
     m_ptr = sp.getPtr();
     return *this;
@@ -128,11 +131,11 @@ SharedPtr<T> &SharedPtr<T>::operator=(const SharedPtr<U> &sp) {
         delete m_ptr;
         delete m_count;    /////check this!!!!!!!!!!
         m_count = sp.getCount();
-        *m_count++;
+        ++*m_count;
     } else {
-        *m_count--;
+        --*m_count;
         m_count = sp.getCount();
-        *m_count++;
+        ++*m_count;
     }
     m_ptr = sp.getPtr();
     return *this;
@@ -142,7 +145,7 @@ template<typename T>
 template<typename U>
 SharedPtr<T>::SharedPtr(const SharedPtr<U> &sp) {
     m_count = sp.getCount();
-    *m_count++;
+    ++*m_count;
     m_ptr = sp.getPtr();
 
 }

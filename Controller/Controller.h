@@ -8,6 +8,7 @@
 #include "../Model/DnaAnalyzer.h"
 #include "CommandParser.h"
 #include "Commands/CommandFactory.h"
+
 class Controller {
 public:
     Controller(SharedPtr<View> view,
@@ -34,7 +35,6 @@ public:
 private:
     SharedPtr<View> m_view;
     SharedPtr<DnaAnalyzer> m_dna_analyzer;
-
     SharedPtr<CommandParser> m_parser;
 
 };

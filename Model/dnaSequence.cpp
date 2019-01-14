@@ -72,14 +72,6 @@ DnaSequence &DnaSequence::operator=(const string &str) {
     return *this;
 }
 
-Nucleotide &DnaSequence::operator[](int ind) { //---------------should return int&---------------
-    return aux_dna[ind];
-}
-
-Nucleotide DnaSequence::operator[](int ind) const {
-    return aux_dna[ind];
-
-}
 
 DnaSequence DnaSequence::slicing(size_t from, size_t to) const {
     if (from < 0 || from > length || to < 0 || to > length || from > to) {
@@ -87,9 +79,11 @@ DnaSequence DnaSequence::slicing(size_t from, size_t to) const {
         throw invalid_argument("Invalid argument for method slice");
     }
     string result;
-    for (int i = from; i < to; i++) {
+    for (size_t i = from; i < to; i++) {
         result += aux_dna[i].getchar();
+
     }
+
     return DnaSequence(result);
 }
 

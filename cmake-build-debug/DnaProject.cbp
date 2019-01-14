@@ -180,13 +180,19 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h">
 			<Option target="DnaProject"/>
 		</Unit>
-		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDnaData.h">
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDna.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/PairDecorator.h">
+			<Option target="DnaProject"/>
+		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ReplaceDecorator.h">
 			<Option target="DnaProject"/>
 		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/SliceDecorator.h">

@@ -21,7 +21,7 @@ string LoadCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
     }
     string sequence_string = FileReader::readFromFile(strs[1]);
     size_t id = dna_analyzer->getNextCount();
-    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(DnaSequence(sequence_string), arg2, id));
+    SharedPtr<DnaSequenceData> sp(new DnaSequenceData(SharedPtr<DnaSequence>(new DnaSequence(sequence_string)), arg2, id));
     dna_analyzer->pushNewSeq(id, arg2, sp);
     size_t sequence_size = sequence_string.size();
     if (sequence_string.size() > 40) {

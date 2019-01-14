@@ -11,7 +11,7 @@ using std::ostream;
 
 
 class Nucleotide {
-    char dna_sequence;
+    char m_char;
 
 public:
     Nucleotide();
@@ -19,6 +19,7 @@ public:
     Nucleotide(char c);
 
     char getchar() const;
+    Nucleotide pair();
 
     friend ostream &operator<<(ostream &out, const Nucleotide &s);
 
@@ -30,7 +31,7 @@ public:
 bool operator!=(const Nucleotide &n1, const Nucleotide &n2);
 
 inline char Nucleotide::Nucleotide::getchar() const {
-    return dna_sequence;
+    return m_char;
 }
 
 

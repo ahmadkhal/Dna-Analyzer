@@ -2,20 +2,29 @@
 #define DNAPROJECT_SLICEDECORATOR_H
 
 
-#include "AbstractDnaData.h"
+#include "AbstractDna.h"
 
-class SliceDecorator : public AbstractDnaDecorator {
+#include "../SharedPtr.h"
 
-public:
-    SliceDecorator(AbstractDnaData *dna_data, size_t from, size_t to) : AbstractDnaDecorator(dna_data) {
+    class SliceDecorator : public AbstractDna {
 
+    public:
+    SliceDecorator(SharedPtr<AbstractDna> dna, size_t from, size_t to) : m_dna(dna),
+                                                                         m_from(from), m_to(to) {
     }
 
-    void manipulate() {
-        m_dna_data->manipulate();
-        m_dna_data->
-
+    size_t size() const {
+        return m_to - m_from;
     }
+
+    Nucleotide operator[](size_t index) const {
+        return (*m_dna)[m_from +index];
+    }
+
+private:
+    SharedPtr<AbstractDna> m_dna;
+    size_t m_from;
+    size_t m_to;
 };
 
 #endif //DNAPROJECT_SLICEDECORATOR_H
