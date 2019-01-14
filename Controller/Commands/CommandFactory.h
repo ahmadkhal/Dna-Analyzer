@@ -72,12 +72,12 @@ public:
     }
 };
 
-//class ConcatCommandFactory : public CommandFactory {
-//public:
-//    SharedPtr<Command> make_command() {
-//        return SharedPtr<Command>(new ConcatCommand());
-//    }
-//};
+class ConcatCommandFactory : public CommandFactory {
+public:
+    SharedPtr<Command> make_command() {
+        return SharedPtr<Command>(new ConcatCommand());
+    }
+};
 
 class ReplaceCommandFactory : public CommandFactory {
 public:

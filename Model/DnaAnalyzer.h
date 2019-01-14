@@ -67,7 +67,7 @@ public:
         m_commands_factory.insert(std::make_pair("list", SharedPtr<CommandFactory>(new ListCommandFactory())));
         m_commands_factory.insert(std::make_pair("slice", SharedPtr<CommandFactory>(new SliceCommandFactory())));
         m_commands_factory.insert(std::make_pair("pair", SharedPtr<CommandFactory>(new PairCommandFactory())));
-//        m_commands_factory.insert(std::make_pair("concat", SharedPtr<CommandFactory>(new ConcatCommandFactory())));
+        m_commands_factory.insert(std::make_pair("concat", SharedPtr<CommandFactory>(new ConcatCommandFactory())));
         m_commands_factory.insert(std::make_pair("replace", SharedPtr<CommandFactory>(new ReplaceCommandFactory())));
 
     }

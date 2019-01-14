@@ -67,6 +67,16 @@ ManagementCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Management/ManagementCommand.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommand.h
+ManipulationCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
+
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommnad.cpp
+ConcatCommand.h
+/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ConcatCommand.h
+../../../Model/DnaAnalyzer.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h
+../../../Model/DnaData/ConcatDecorator.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ConcatDecorator.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
 ../Command.h
@@ -75,14 +85,6 @@ ManagementCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/PairCommand.h
 ManipulationCommand.h
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ManipulationCommand.h
-
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.cpp
-ReplaceCommand.h
-/home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.h
-../../../Model/DnaAnalyzer.h
-/home/ahmad/CLionProjects/DnaProject/Model/DnaAnalyzer.h
-../../../Model/DnaData/ReplaceDecorator.h
-/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ReplaceDecorator.h
 
 /home/ahmad/CLionProjects/DnaProject/Controller/Commands/Manipulation/ReplaceCommand.h
 ManipulationCommand.h
@@ -106,6 +108,18 @@ SharedPtr.h
 ../SharedPtr.h
 /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
 
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ConcatDecorator.h
+AbstractDna.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDna.h
+../SharedPtr.h
+/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
+../Nucleotide.h
+/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
+
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp
+DnaSequenceData.h
+/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
+
 /home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.h
 sstream
 -
@@ -113,20 +127,6 @@ sstream
 /home/ahmad/CLionProjects/DnaProject/Model/dnaSequence.h
 ../SharedPtr.h
 /home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-
-/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ReplaceDecorator.h
-AbstractDna.h
-/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDna.h
-../SharedPtr.h
-/home/ahmad/CLionProjects/DnaProject/Model/SharedPtr.h
-../Nucleotide.h
-/home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
-vector
--
-map
--
-exception
--
 
 /home/ahmad/CLionProjects/DnaProject/Model/Nucleotide.h
 iostream

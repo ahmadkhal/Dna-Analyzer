@@ -183,6 +183,9 @@
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/AbstractDna.h">
 			<Option target="DnaProject"/>
 		</Unit>
+		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/ConcatDecorator.h">
+			<Option target="DnaProject"/>
+		</Unit>
 		<Unit filename="/home/ahmad/CLionProjects/DnaProject/Model/DnaData/DnaSequenceData.cpp">
 			<Option target="DnaProject"/>
 		</Unit>

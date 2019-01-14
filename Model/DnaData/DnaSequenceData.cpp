@@ -2,7 +2,7 @@
 
 
 ostream &operator<<(ostream &os, const DnaSequenceData &dnaSequenceMember) {
-    os << "[" << dnaSequenceMember.getID() << "] " << dnaSequenceMember.getName() << ":"
+    os << "[" << dnaSequenceMember.getID() << "] " << dnaSequenceMember.getName() << ": "
        << dnaSequenceMember.formatted_string();
     return os;
 }
