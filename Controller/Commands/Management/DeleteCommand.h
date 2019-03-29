@@ -1,0 +1,8 @@
+//
+// Created by ahmad on 1/14/19.
+//
+
+#ifndef DNAPROJECT_DELETECOMMAND_H
+#define DNAPROJECT_DELETECOMMAND_H
+
+#endif //DNAPROJECT_DELETECOMMAND_H
