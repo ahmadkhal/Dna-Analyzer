@@ -106,13 +106,13 @@ DnaSequence DnaSequence::pairing() const {
 static DnaSequence::Interval findSubsequence(const DnaSequence &subSequence,
                                              const DnaSequence &sequence, int i) {
     int j;
-    for (j = i; j < subSequence.getLength() + i && j < sequence.getLength();
+    for (j = i; j < subSequence.size() + i && j < sequence.size();
          j++) {
         if (subSequence[j - i] != sequence[j]) {
             break;
         }
     }
-    if (subSequence.getLength() == j - i) {
+    if (subSequence.size() == j - i) {
         return DnaSequence::Interval(i, j - 1);
     }
     return DnaSequence::Interval(-1, -1);
@@ -120,11 +120,11 @@ static DnaSequence::Interval findSubsequence(const DnaSequence &subSequence,
 }
 
 DnaSequence::Interval DnaSequence::find(const DnaSequence &subSequence) const {
-    if (subSequence.getLength() > getLength()) {
+    if (subSequence.size() > size()) {
         return DnaSequence::Interval(-1, -1);
     }
     int i;
-    for (i = 0; i < getLength(); i++) {
+    for (i = 0; i < size(); i++) {
         DnaSequence::Interval interv = findSubsequence(subSequence, *this, i);
         if (interv.getFrom() != -1) {
             return interv;
@@ -136,11 +136,11 @@ DnaSequence::Interval DnaSequence::find(const DnaSequence &subSequence) const {
 int DnaSequence::count(const DnaSequence &subSequence) const {
     int count = 0;
 
-    if (subSequence.getLength() > getLength()) {
+    if (subSequence.size() > size()) {
         return count;
     }
     int i;
-    for (i = 0; i < getLength(); i++) {
+    for (i = 0; i < size(); i++) {
 
         DnaSequence::Interval interv = findSubsequence(subSequence, *this, i);
         if (interv.getFrom() != -1) {
@@ -170,7 +170,7 @@ const vector<DnaSequence::Interval> DnaSequence::findAll(
             location += interv.getFrom() + 1;
 
         }
-        tmp = tmp.slicing(interv.getFrom() + 1, tmp.getLength());
+        tmp = tmp.slicing(interv.getFrom() + 1, tmp.size());
     }
 }
 
@@ -206,30 +206,13 @@ DnaSequence::~DnaSequence() {
     delete[] aux_dna;
 }
 
-bool operator==(const DnaSequence &ds1, const DnaSequence &ds2) {
 
-    if (ds1.length != ds2.length) {
-        return false;
-    }
-    for (int i = 0; i < ds1.length; i++) {
-        if (ds1.aux_dna[i] != ds2.aux_dna[i]) {
-            return false;
-        }
-    }
-    return true;
-}
 
 bool operator!=(const DnaSequence &ds1, const DnaSequence &ds2) {
     return !(ds1 == ds2);
 }
 
-ostream &operator<<(ostream &out, const DnaSequence &ds) {
 
-    out << ds.getString();
-
-
-    return out;
-}
 
 
 

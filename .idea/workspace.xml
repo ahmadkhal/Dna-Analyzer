@@ -26,6 +26,12 @@
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/InvalidCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/DeleteCommand.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/DeleteCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/ReenumCommand.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/ReenumCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" afterDir="false" />
@@ -37,38 +43,88 @@
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Runner.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/Runner.h" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Controller/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/sample.raw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOFiles/sample.raw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/DnaStore.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Command.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Command.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CommandParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CommandParser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CommandParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CommandParser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Control/ListCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Control/ListCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Control/ListCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Control/ListCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Controller.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/DnaAnalyzer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/asd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/dnaSequenceMember.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/sample.raw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaAnalyzer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/AbstractDna.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/AbstractDna.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/PairDecorator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/PairDecorator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DnaData/SliceDecorator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/SliceDecorator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/FIleReader.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/FIleReader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/FileWriter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/FileWriter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Nucleotide.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/Nucleotide.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Nucleotide.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/Nucleotide.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/dnaSequence.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/dnaSequence.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/dnaSequence.h" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DnaData/dnaSequence.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Control/ListCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/LoadCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Management/SaveCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/PairCommnad.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ReplaceCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/SliceCommand.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Controller/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/DnaData/DnaSequenceData.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/DnaData/DnaSequenceData.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FIleReader.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DnaProject.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DnaProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DnaProject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DnaProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DnaProject.cbp" afterDir="false" />
@@ -99,111 +155,101 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
+        <entry file="file://$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="21">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#77#101#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
+        <entry file="file://$PROJECT_DIR$/Controller/Controller.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="141">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+              <folding>
+                <element signature="e#67#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/DnaStore.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
+              <folding>
+                <element signature="e#68#82#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Runner.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#59#90#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp">
+        <entry file="file://$PROJECT_DIR$/IOFiles/sample.raw">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/Runner.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="31" column="84" lean-forward="true" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
+            <state relative-caret-position="467">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
+        <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="442">
+              <caret line="49" column="43" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="43" />
               <folding>
-                <element signature="e#85#103#0" expanded="true" />
+                <element signature="e#79#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp">
+        <entry file="file://$PROJECT_DIR$/Model/DnaData/PairDecorator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="336">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="93" />
-              <folding>
-                <element signature="e#2#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-              <folding>
-                <element signature="e#99#116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="92" selection-start-line="33" selection-start-column="92" selection-end-line="33" selection-end-column="92" />
-              <folding>
-                <element signature="e#1#27#0" expanded="true" />
+                <element signature="e#72#96#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,6 +270,7 @@
       <find>setDnaSequence</find>
       <find>--</find>
       <find>[]</find>
+      <find>operator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,13 +280,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Controller/CommandParser.h" />
-        <option value="$PROJECT_DIR$/Controller/DnaSequenceMember.cpp" />
-        <option value="$PROJECT_DIR$/Controller/DnaSequenceMember.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/CommandFactory.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Command.cpp" />
-        <option value="$PROJECT_DIR$/Controller/Commands/CommandFactory.cpp" />
         <option value="$PROJECT_DIR$/Controller/Controller.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Management/ManagementCommand.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h" />
@@ -255,44 +295,51 @@
         <option value="$PROJECT_DIR$/Controller/Commands/Command.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Controller/Controller.h" />
-        <option value="$PROJECT_DIR$/Controller/main.cpp" />
         <option value="$PROJECT_DIR$/Model/DnaData/AbstractDnaData.h" />
         <option value="$PROJECT_DIR$/Model/Nucleotide.h" />
-        <option value="$PROJECT_DIR$/Model/dnaSequence.cpp" />
-        <option value="$PROJECT_DIR$/Model/dnaSequence.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.cpp" />
         <option value="$PROJECT_DIR$/Model/Nucleotide.cpp" />
-        <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h" />
-        <option value="$PROJECT_DIR$/Model/DnaData/SliceDecorator.h" />
         <option value="$PROJECT_DIR$/Model/SharedPtr.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h" />
-        <option value="$PROJECT_DIR$/Model/DnaData/PairDecorator.h" />
-        <option value="$PROJECT_DIR$/Model/DnaData/AbstractDna.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h" />
         <option value="$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" />
-        <option value="$PROJECT_DIR$/Model/DnaAnalyzer.h" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h" />
-        <option value="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" />
         <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" />
-        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.cpp" />
         <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.h" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.cpp" />
+        <option value="$PROJECT_DIR$/Model/DnaData/AbstractDna.h" />
+        <option value="$PROJECT_DIR$/Model/DnaData/SliceDecorator.h" />
+        <option value="$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h" />
+        <option value="$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Commands/CommandFactory.h" />
+        <option value="$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h" />
+        <option value="$PROJECT_DIR$/Model/dnaSequence.h" />
+        <option value="$PROJECT_DIR$/Model/dnaSequence.cpp" />
+        <option value="$PROJECT_DIR$/Model/DnaData/PairDecorator.h" />
+        <option value="$PROJECT_DIR$/Controller/main.cpp" />
+        <option value="$PROJECT_DIR$/Controller/Runner.h" />
+        <option value="$PROJECT_DIR$/Controller/Controller.h" />
+        <option value="$PROJECT_DIR$/Controller/Runner.cpp" />
+        <option value="$PROJECT_DIR$/Model/DnaAnalyzer.h" />
+        <option value="$PROJECT_DIR$/Model/DnaStore.cpp" />
+        <option value="$PROJECT_DIR$/Model/DnaStore.h" />
+        <option value="$PROJECT_DIR$/Controller/CommandParser.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-30" />
-    <option name="y" value="80" />
-    <option name="width" value="1833" />
-    <option name="height" value="789" />
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1843" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -314,30 +361,6 @@
             </path>
             <path>
               <item name="DnaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DnaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DnaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DnaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Commands" type="462c0819:PsiDirectoryNode" />
-              <item name="Manipulation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DnaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DnaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DnaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DnaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="DnaData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DnaProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -349,21 +372,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IOFiles" />
       <recent name="$PROJECT_DIR$/Model/DnaData" />
       <recent name="$PROJECT_DIR$/Controller/Commands" />
       <recent name="$PROJECT_DIR$/Controller/Commands/Manipulation" />
       <recent name="$PROJECT_DIR$/Controller/Commands/Management" />
-      <recent name="$PROJECT_DIR$/Controller/Commands/Creational" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,7 +427,16 @@
       <workItem from="1547133487126" duration="10220000" />
       <workItem from="1547143982901" duration="3842000" />
       <workItem from="1547196025295" duration="37663000" />
-      <workItem from="1547364260397" duration="44371000" />
+      <workItem from="1547364260397" duration="45982000" />
+      <workItem from="1547622841898" duration="6439000" />
+      <workItem from="1548602362693" duration="1468000" />
+      <workItem from="1549982370854" duration="29000" />
+      <workItem from="1550581970631" duration="877000" />
+      <workItem from="1551357046735" duration="719000" />
+      <workItem from="1551815861172" duration="1454000" />
+      <workItem from="1552235677750" duration="608000" />
+      <workItem from="1552907623566" duration="54000" />
+      <workItem from="1553774881651" duration="7781000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1546168109600</created>
@@ -422,7 +456,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247611000" />
+    <option name="totallyTimeSpent" value="268651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,16 +469,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14831212" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16491422" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4975097" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49142224" weight="0.26241902" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49142224" weight="0.10583153" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5644715" side_tool="true" weight="0.30172414" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.89374655" weight="0.20086393" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.89374655" weight="0.42224622" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.4997233" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.76978415" weight="0.537797" />
@@ -452,7 +485,7 @@
       <window_info anchor="bottom" id="CMake" order="9" sideWeight="0.4986165" weight="0.32829374" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.4986165" weight="0.32829374" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4355285" visible="true" weight="0.26349893" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4355285" visible="true" weight="0.28077754" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,21 +493,21 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.14997233" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.016602103" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" sideWeight="0.4975097" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49142224" weight="0.26241902" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49142224" weight="0.10583153" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5644715" side_tool="true" weight="0.30172414" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" sideWeight="0.89374655" visible="true" weight="0.9676026" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.89374655" visible="true" weight="0.032397408" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.4997233" weight="0.32937366" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.76978415" weight="0.24730022" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.76978415" weight="0.537797" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="9" sideWeight="0.4986165" weight="0.32829374" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" sideWeight="0.4986165" weight="0.32829374" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4355285" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4355285" weight="0.26349893" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -519,13 +552,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp</url>
-          <line>20</line>
+          <line>16</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h</url>
           <line>17</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Model/DnaData/AbstractDna.h</url>
+          <line>12</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -547,128 +585,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Controller/DnaSequenceMember.h" />
-    <entry file="file://$PROJECT_DIR$/Controller/DnaAnalyzer.h" />
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Control/ListCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Creational/DupCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Control/ListCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Creational/CreationalCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Creational/LoadCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="23" column="122" selection-start-line="23" selection-start-column="122" selection-end-line="23" selection-end-column="122" />
-          <folding>
-            <element signature="e#2#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Creational/NewCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/CLI.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Controller.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#3#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/7/bits/stl_function.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="385" selection-start-line="385" selection-end-line="385" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/7/bits/basic_string.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="6087" selection-start-line="6087" selection-end-line="6087" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/7/bits/stl_tree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="234" selection-start-line="234" selection-end-line="234" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/7/ext/aligned_buffer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Controller.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#67#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,27 +612,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Nucleotide.cpp">
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/Nucleotide.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Nucleotide.h">
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/Nucleotide.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,33 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/dnaSequence.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="109" column="28" selection-start-line="109" selection-start-column="28" selection-end-line="109" selection-end-column="28" />
-          <folding>
-            <element signature="e#47#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/AbstractDna.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/SliceDecorator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#74#98#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,22 +647,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/PairDecorator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#72#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.cpp" />
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatDecorator.h" />
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ReplaceCommand.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -787,111 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/CommandFactory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <element signature="e#76#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/dnaSequence.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="227" column="17" selection-start-line="227" selection-start-column="17" selection-end-line="227" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaAnalyzer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="71" selection-start-line="62" selection-start-column="6" selection-end-line="71" />
-          <folding>
-            <element signature="e#68#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/SharedPtr.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="38" />
-          <folding>
-            <element signature="e#77#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#79#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="88" selection-start-line="4" selection-start-column="88" selection-end-line="4" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-          <folding>
-            <element signature="e#76#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="e#99#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#85#103#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,49 +673,294 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/DeleteCommand.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/ReenumCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/RenameCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="14" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/ReenumCommand.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/DeleteCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Management/SaveCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/dnaSequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2760">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#47#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/dnaSequence.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5040">
+          <caret line="210" column="13" selection-start-line="210" selection-start-column="5" selection-end-line="210" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/ConcatDecorator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#76#100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommnad.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="93" />
+        <state relative-caret-position="672">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#2#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Command.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#99#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#85#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ManipulationCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="360">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/PairCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommnad.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="31" column="84" lean-forward="true" selection-start-line="31" selection-start-column="84" selection-end-line="31" selection-end-column="84" />
+        <state relative-caret-position="552">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/ConcatCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/Manipulation/SliceCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/SliceDecorator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Commands/CommandFactory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
+          <folding>
+            <element signature="e#76#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/AbstractDna.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/DnaSequenceData.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="43" />
+          <folding>
+            <element signature="e#79#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/PairDecorator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#72#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/SharedPtr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaData/ReplaceDecorator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#77#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Runner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Controller.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <element signature="e#67#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaStore.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DnaStore.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#68#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/CommandParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/CommandParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/Runner.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#59#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IOFiles/sample.raw">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

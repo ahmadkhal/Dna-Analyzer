@@ -1,6 +1,6 @@
 #include "DupCommand.h"
-#include"../../../Model/DnaAnalyzer.h"
-string DupCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+#include"../../../Model/DnaStore.h"
+string DupCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
     string arg1 = dna_analyzer->getDnaSequenceByArg(strs[1])->getString();
     string arg2;
     ostringstream arg2_string_stream;

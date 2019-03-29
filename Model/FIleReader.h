@@ -3,7 +3,7 @@
 
 #include <string>
 #include "SharedPtr.h"
-#include "dnaSequence.h"
+#include "DnaData/dnaSequence.h"
 
 
 

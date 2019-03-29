@@ -16,72 +16,72 @@
 
 
 
-class CommandFactory {
+class ICommandFactory {
 public:
-    virtual SharedPtr<Command> make_command() = 0;
+    virtual SharedPtr<Command> create() = 0;
 
-    virtual ~CommandFactory() {}
+    virtual ~ICommandFactory() {}
 };
 
-class NewCommandFactory : public CommandFactory {
+class NewCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new NewCommand());
     }
 };
 
-class LoadCommandFactory : public CommandFactory {
+class LoadCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new LoadCommand());
     }
 };
 
-class SaveCommandFactory : public CommandFactory {
+class SaveCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new SaveCommand());
     }
 };
 
-class DupCommandFactory : public CommandFactory {
+class DupCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new DupCommand());
     }
 };
 
-class ListCommandFactory : public CommandFactory {
+class ListCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new ListCommand());
     }
 };
 
-class PairCommandFactory : public CommandFactory {
+class PairCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new PairCommand());
     }
 };
 
-class SliceCommandFactory : public CommandFactory {
+class SliceCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new SliceCommand());
     }
 };
 
-class ConcatCommandFactory : public CommandFactory {
+class ConcatCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new ConcatCommand());
     }
 };
 
-class ReplaceCommandFactory : public CommandFactory {
+class ReplaceCommandFactory : public ICommandFactory {
 public:
-    SharedPtr<Command> make_command() {
+    SharedPtr<Command> create() {
         return SharedPtr<Command>(new ReplaceCommand());
     }
 };

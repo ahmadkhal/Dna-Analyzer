@@ -13,11 +13,13 @@ public:
     virtual size_t size() const = 0;
 };
 
+typedef SharedPtr<AbstractDna> IDnaPtr;
 
-inline  ostream& operator<<(ostream& os,SharedPtr<AbstractDna> sp_dna){
-    for(size_t i=0;i<sp_dna->size();i++){
-        os<<(*sp_dna)[i].getchar();
+inline ostream &operator<<(ostream &os, IDnaPtr sp_dna) {
+    for (size_t i = 0; i < sp_dna->size(); i++) {
+        os << (*sp_dna)[i];
     }
     return os;
 }
+
 #endif //DNAPROJECT_ABSTRACTDNA_H

@@ -4,7 +4,7 @@
 
 #include "AbstractDna.h"
 #include "../SharedPtr.h"
-#include "../Nucleotide.h"
+#include "Nucleotide.h"
 
 class PairDecorator : public AbstractDna {
 

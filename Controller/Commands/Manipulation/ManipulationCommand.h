@@ -8,7 +8,7 @@
 
 class ManipulationCommand : public Command {
 public:
-    string choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer, string postfix);
+    string choose_name(const string &sequence_name, SharedPtr<DnaStore> dna_analyzer, string postfix);
 
 
 };

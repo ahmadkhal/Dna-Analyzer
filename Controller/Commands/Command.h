@@ -9,7 +9,7 @@
 #include <vector>
 #include "../../Model/SharedPtr.h"
 
-class DnaAnalyzer;
+class DnaStore;
 
 using namespace std;
 
@@ -17,7 +17,7 @@ class Command {
 public:
 
 
-    virtual string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) = 0;
+    virtual string execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) = 0;
 
     virtual ~Command() {};
 

@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include <exception>
 #include "Nucleotide.h"
-#include "DnaData/AbstractDna.h"
+#include "AbstractDna.h"
 #include <map>
 #include <iterator>
 #include <assert.h>
@@ -24,7 +24,7 @@ using std::map;
 using std::bad_alloc;
 
 
-class DnaSequence : public AbstractDna{
+class DnaSequence : public AbstractDna {
 public:
     class Interval {
 
@@ -47,11 +47,7 @@ public:
 
     DnaSequence(const string &dna_sequence);
 
-    DnaSequence(const Nucleotide &dns);
-
     DnaSequence(const DnaSequence &ds);
-
-    DnaSequence &operator=(const Nucleotide &ds);
 
     DnaSequence &operator=(const DnaSequence &ds);
 
@@ -59,16 +55,11 @@ public:
 
     DnaSequence &operator=(const string &str);
 
-    Nucleotide &operator[](size_t index);
-
     Nucleotide operator[](size_t index) const;
 
-     string getString()const ;
+    string getString() const;
 
-
-    size_t size()const{
-        return length;
-    }
+    size_t size() const;
 
     DnaSequence slicing(size_t from, size_t to) const;
 
@@ -83,13 +74,10 @@ public:
 
     vector<Interval> findAllConsensus() const;
 
-    int getLength() const;
+
 
     ~DnaSequence();
 
-    friend ostream &operator<<(ostream &out, const DnaSequence &s);
-
-    friend bool operator==(const DnaSequence &ds1, const DnaSequence &ds2);
 
 private:
     Nucleotide *aux_dna;
@@ -101,13 +89,12 @@ private:
 
 bool operator!=(const DnaSequence &ds1, const DnaSequence &ds2);
 
-inline int DnaSequence::getLength() const {
-
-    return length;
-
+inline size_t DnaSequence::size() const {
+    return size();
 }
 
-inline  string DnaSequence::getString() const {
+
+inline string DnaSequence::getString() const {
     string str = "";
     for (int i = 0; i < length; i++) {
         str += aux_dna[i].getchar();
@@ -116,10 +103,24 @@ inline  string DnaSequence::getString() const {
 
 }
 
+inline ostream &operator<<(ostream &out, const DnaSequence &ds) {
 
-inline Nucleotide &DnaSequence::operator[](size_t index) { //---------------should return int&---------------
-    return aux_dna[index];
+    out << ds.getString();
+
+
+    return out;
 }
+
+inline bool operator==(const DnaSequence &ds1, const DnaSequence &ds2) {
+
+    if (ds1.size() != ds2.size()) {
+        return false;
+    }
+    return ds1.getString() == ds2.getString();
+
+
+}
+
 
 inline Nucleotide DnaSequence::operator[](size_t index) const {
     return aux_dna[index];

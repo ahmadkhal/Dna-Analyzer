@@ -2,7 +2,7 @@
 #define DNAPROJECT_FILEWRITER_H
 
 #include <string>
-#include "dnaSequence.h"
+#include "DnaData/dnaSequence.h"
 #include <fstream>
 using std::ofstream;
 using std::string;

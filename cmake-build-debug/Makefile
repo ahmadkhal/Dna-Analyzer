@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/58/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/61/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/58/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/61/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ahmad/CLionProjects/DnaProject/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/58/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/61/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/61/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -285,6 +285,87 @@ Controller/Commands/Creational/NewCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Creational/NewCommand.cpp.s
 .PHONY : Controller/Commands/Creational/NewCommand.cpp.s
 
+Controller/Commands/Management/DeleteCommand.o: Controller/Commands/Management/DeleteCommand.cpp.o
+
+.PHONY : Controller/Commands/Management/DeleteCommand.o
+
+# target to build an object file
+Controller/Commands/Management/DeleteCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/DeleteCommand.cpp.o
+.PHONY : Controller/Commands/Management/DeleteCommand.cpp.o
+
+Controller/Commands/Management/DeleteCommand.i: Controller/Commands/Management/DeleteCommand.cpp.i
+
+.PHONY : Controller/Commands/Management/DeleteCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Management/DeleteCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/DeleteCommand.cpp.i
+.PHONY : Controller/Commands/Management/DeleteCommand.cpp.i
+
+Controller/Commands/Management/DeleteCommand.s: Controller/Commands/Management/DeleteCommand.cpp.s
+
+.PHONY : Controller/Commands/Management/DeleteCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Management/DeleteCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/DeleteCommand.cpp.s
+.PHONY : Controller/Commands/Management/DeleteCommand.cpp.s
+
+Controller/Commands/Management/ReenumCommand.o: Controller/Commands/Management/ReenumCommand.cpp.o
+
+.PHONY : Controller/Commands/Management/ReenumCommand.o
+
+# target to build an object file
+Controller/Commands/Management/ReenumCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/ReenumCommand.cpp.o
+.PHONY : Controller/Commands/Management/ReenumCommand.cpp.o
+
+Controller/Commands/Management/ReenumCommand.i: Controller/Commands/Management/ReenumCommand.cpp.i
+
+.PHONY : Controller/Commands/Management/ReenumCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Management/ReenumCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/ReenumCommand.cpp.i
+.PHONY : Controller/Commands/Management/ReenumCommand.cpp.i
+
+Controller/Commands/Management/ReenumCommand.s: Controller/Commands/Management/ReenumCommand.cpp.s
+
+.PHONY : Controller/Commands/Management/ReenumCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Management/ReenumCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/ReenumCommand.cpp.s
+.PHONY : Controller/Commands/Management/ReenumCommand.cpp.s
+
+Controller/Commands/Management/RenameCommand.o: Controller/Commands/Management/RenameCommand.cpp.o
+
+.PHONY : Controller/Commands/Management/RenameCommand.o
+
+# target to build an object file
+Controller/Commands/Management/RenameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/RenameCommand.cpp.o
+.PHONY : Controller/Commands/Management/RenameCommand.cpp.o
+
+Controller/Commands/Management/RenameCommand.i: Controller/Commands/Management/RenameCommand.cpp.i
+
+.PHONY : Controller/Commands/Management/RenameCommand.i
+
+# target to preprocess a source file
+Controller/Commands/Management/RenameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/RenameCommand.cpp.i
+.PHONY : Controller/Commands/Management/RenameCommand.cpp.i
+
+Controller/Commands/Management/RenameCommand.s: Controller/Commands/Management/RenameCommand.cpp.s
+
+.PHONY : Controller/Commands/Management/RenameCommand.s
+
+# target to generate assembly for a file
+Controller/Commands/Management/RenameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Commands/Management/RenameCommand.cpp.s
+.PHONY : Controller/Commands/Management/RenameCommand.cpp.s
+
 Controller/Commands/Management/SaveCommand.o: Controller/Commands/Management/SaveCommand.cpp.o
 
 .PHONY : Controller/Commands/Management/SaveCommand.o
@@ -474,6 +555,33 @@ Controller/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Controller.cpp.s
 .PHONY : Controller/Controller.cpp.s
 
+Controller/Runner.o: Controller/Runner.cpp.o
+
+.PHONY : Controller/Runner.o
+
+# target to build an object file
+Controller/Runner.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Runner.cpp.o
+.PHONY : Controller/Runner.cpp.o
+
+Controller/Runner.i: Controller/Runner.cpp.i
+
+.PHONY : Controller/Runner.i
+
+# target to preprocess a source file
+Controller/Runner.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Runner.cpp.i
+.PHONY : Controller/Runner.cpp.i
+
+Controller/Runner.s: Controller/Runner.cpp.s
+
+.PHONY : Controller/Runner.s
+
+# target to generate assembly for a file
+Controller/Runner.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Controller/Runner.cpp.s
+.PHONY : Controller/Runner.cpp.s
+
 Controller/main.o: Controller/main.cpp.o
 
 .PHONY : Controller/main.o
@@ -527,6 +635,87 @@ Model/DnaData/DnaSequenceData.s: Model/DnaData/DnaSequenceData.cpp.s
 Model/DnaData/DnaSequenceData.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/DnaSequenceData.cpp.s
 .PHONY : Model/DnaData/DnaSequenceData.cpp.s
+
+Model/DnaData/Nucleotide.o: Model/DnaData/Nucleotide.cpp.o
+
+.PHONY : Model/DnaData/Nucleotide.o
+
+# target to build an object file
+Model/DnaData/Nucleotide.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/Nucleotide.cpp.o
+.PHONY : Model/DnaData/Nucleotide.cpp.o
+
+Model/DnaData/Nucleotide.i: Model/DnaData/Nucleotide.cpp.i
+
+.PHONY : Model/DnaData/Nucleotide.i
+
+# target to preprocess a source file
+Model/DnaData/Nucleotide.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/Nucleotide.cpp.i
+.PHONY : Model/DnaData/Nucleotide.cpp.i
+
+Model/DnaData/Nucleotide.s: Model/DnaData/Nucleotide.cpp.s
+
+.PHONY : Model/DnaData/Nucleotide.s
+
+# target to generate assembly for a file
+Model/DnaData/Nucleotide.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/Nucleotide.cpp.s
+.PHONY : Model/DnaData/Nucleotide.cpp.s
+
+Model/DnaData/dnaSequence.o: Model/DnaData/dnaSequence.cpp.o
+
+.PHONY : Model/DnaData/dnaSequence.o
+
+# target to build an object file
+Model/DnaData/dnaSequence.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/dnaSequence.cpp.o
+.PHONY : Model/DnaData/dnaSequence.cpp.o
+
+Model/DnaData/dnaSequence.i: Model/DnaData/dnaSequence.cpp.i
+
+.PHONY : Model/DnaData/dnaSequence.i
+
+# target to preprocess a source file
+Model/DnaData/dnaSequence.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/dnaSequence.cpp.i
+.PHONY : Model/DnaData/dnaSequence.cpp.i
+
+Model/DnaData/dnaSequence.s: Model/DnaData/dnaSequence.cpp.s
+
+.PHONY : Model/DnaData/dnaSequence.s
+
+# target to generate assembly for a file
+Model/DnaData/dnaSequence.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaData/dnaSequence.cpp.s
+.PHONY : Model/DnaData/dnaSequence.cpp.s
+
+Model/DnaStore.o: Model/DnaStore.cpp.o
+
+.PHONY : Model/DnaStore.o
+
+# target to build an object file
+Model/DnaStore.cpp.o:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaStore.cpp.o
+.PHONY : Model/DnaStore.cpp.o
+
+Model/DnaStore.i: Model/DnaStore.cpp.i
+
+.PHONY : Model/DnaStore.i
+
+# target to preprocess a source file
+Model/DnaStore.cpp.i:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaStore.cpp.i
+.PHONY : Model/DnaStore.cpp.i
+
+Model/DnaStore.s: Model/DnaStore.cpp.s
+
+.PHONY : Model/DnaStore.s
+
+# target to generate assembly for a file
+Model/DnaStore.cpp.s:
+	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/DnaStore.cpp.s
+.PHONY : Model/DnaStore.cpp.s
 
 Model/FIleReader.o: Model/FIleReader.cpp.o
 
@@ -582,60 +771,6 @@ Model/FileWriter.cpp.s:
 	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/FileWriter.cpp.s
 .PHONY : Model/FileWriter.cpp.s
 
-Model/Nucleotide.o: Model/Nucleotide.cpp.o
-
-.PHONY : Model/Nucleotide.o
-
-# target to build an object file
-Model/Nucleotide.cpp.o:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o
-.PHONY : Model/Nucleotide.cpp.o
-
-Model/Nucleotide.i: Model/Nucleotide.cpp.i
-
-.PHONY : Model/Nucleotide.i
-
-# target to preprocess a source file
-Model/Nucleotide.cpp.i:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.i
-.PHONY : Model/Nucleotide.cpp.i
-
-Model/Nucleotide.s: Model/Nucleotide.cpp.s
-
-.PHONY : Model/Nucleotide.s
-
-# target to generate assembly for a file
-Model/Nucleotide.cpp.s:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.s
-.PHONY : Model/Nucleotide.cpp.s
-
-Model/dnaSequence.o: Model/dnaSequence.cpp.o
-
-.PHONY : Model/dnaSequence.o
-
-# target to build an object file
-Model/dnaSequence.cpp.o:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o
-.PHONY : Model/dnaSequence.cpp.o
-
-Model/dnaSequence.i: Model/dnaSequence.cpp.i
-
-.PHONY : Model/dnaSequence.i
-
-# target to preprocess a source file
-Model/dnaSequence.cpp.i:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.i
-.PHONY : Model/dnaSequence.cpp.i
-
-Model/dnaSequence.s: Model/dnaSequence.cpp.s
-
-.PHONY : Model/dnaSequence.s
-
-# target to generate assembly for a file
-Model/dnaSequence.cpp.s:
-	$(MAKE) -f CMakeFiles/DnaProject.dir/build.make CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.s
-.PHONY : Model/dnaSequence.cpp.s
-
 View/CLI.o: View/CLI.cpp.o
 
 .PHONY : View/CLI.o
@@ -690,6 +825,15 @@ help:
 	@echo "... Controller/Commands/Creational/NewCommand.o"
 	@echo "... Controller/Commands/Creational/NewCommand.i"
 	@echo "... Controller/Commands/Creational/NewCommand.s"
+	@echo "... Controller/Commands/Management/DeleteCommand.o"
+	@echo "... Controller/Commands/Management/DeleteCommand.i"
+	@echo "... Controller/Commands/Management/DeleteCommand.s"
+	@echo "... Controller/Commands/Management/ReenumCommand.o"
+	@echo "... Controller/Commands/Management/ReenumCommand.i"
+	@echo "... Controller/Commands/Management/ReenumCommand.s"
+	@echo "... Controller/Commands/Management/RenameCommand.o"
+	@echo "... Controller/Commands/Management/RenameCommand.i"
+	@echo "... Controller/Commands/Management/RenameCommand.s"
 	@echo "... Controller/Commands/Management/SaveCommand.o"
 	@echo "... Controller/Commands/Management/SaveCommand.i"
 	@echo "... Controller/Commands/Management/SaveCommand.s"
@@ -711,24 +855,30 @@ help:
 	@echo "... Controller/Controller.o"
 	@echo "... Controller/Controller.i"
 	@echo "... Controller/Controller.s"
+	@echo "... Controller/Runner.o"
+	@echo "... Controller/Runner.i"
+	@echo "... Controller/Runner.s"
 	@echo "... Controller/main.o"
 	@echo "... Controller/main.i"
 	@echo "... Controller/main.s"
 	@echo "... Model/DnaData/DnaSequenceData.o"
 	@echo "... Model/DnaData/DnaSequenceData.i"
 	@echo "... Model/DnaData/DnaSequenceData.s"
+	@echo "... Model/DnaData/Nucleotide.o"
+	@echo "... Model/DnaData/Nucleotide.i"
+	@echo "... Model/DnaData/Nucleotide.s"
+	@echo "... Model/DnaData/dnaSequence.o"
+	@echo "... Model/DnaData/dnaSequence.i"
+	@echo "... Model/DnaData/dnaSequence.s"
+	@echo "... Model/DnaStore.o"
+	@echo "... Model/DnaStore.i"
+	@echo "... Model/DnaStore.s"
 	@echo "... Model/FIleReader.o"
 	@echo "... Model/FIleReader.i"
 	@echo "... Model/FIleReader.s"
 	@echo "... Model/FileWriter.o"
 	@echo "... Model/FileWriter.i"
 	@echo "... Model/FileWriter.s"
-	@echo "... Model/Nucleotide.o"
-	@echo "... Model/Nucleotide.i"
-	@echo "... Model/Nucleotide.s"
-	@echo "... Model/dnaSequence.o"
-	@echo "... Model/dnaSequence.i"
-	@echo "... Model/dnaSequence.s"
 	@echo "... View/CLI.o"
 	@echo "... View/CLI.i"
 	@echo "... View/CLI.s"

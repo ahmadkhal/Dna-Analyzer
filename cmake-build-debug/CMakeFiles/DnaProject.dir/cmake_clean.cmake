@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DnaProject.dir/Model/dnaSequence.cpp.o"
-  "CMakeFiles/DnaProject.dir/Model/Nucleotide.cpp.o"
+  "CMakeFiles/DnaProject.dir/Model/DnaData/dnaSequence.cpp.o"
+  "CMakeFiles/DnaProject.dir/Model/DnaData/Nucleotide.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Controller.cpp.o"
   "CMakeFiles/DnaProject.dir/View/CLI.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/CommandParser.cpp.o"
@@ -19,6 +19,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ConcatCommnad.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Creational/DupCommand.cpp.o"
   "CMakeFiles/DnaProject.dir/Controller/Commands/Manipulation/ManipulationCommand.cpp.o"
+  "CMakeFiles/DnaProject.dir/Controller/Commands/Management/RenameCommand.cpp.o"
+  "CMakeFiles/DnaProject.dir/Controller/Commands/Management/DeleteCommand.cpp.o"
+  "CMakeFiles/DnaProject.dir/Controller/Commands/Management/ReenumCommand.cpp.o"
+  "CMakeFiles/DnaProject.dir/Controller/Runner.cpp.o"
+  "CMakeFiles/DnaProject.dir/Model/DnaStore.cpp.o"
   "DnaProject.pdb"
   "DnaProject"
 )

@@ -2,7 +2,7 @@
 #define DNAPROJECT_DNASEQUENCEMEMBER_H
 
 #include <sstream>
-#include "../dnaSequence.h"
+#include "dnaSequence.h"
 
 #include "../SharedPtr.h"
 
@@ -46,8 +46,9 @@ ostream &operator<<(ostream &os, const DnaSequenceData &dnaSequenceMember);
 inline SharedPtr<AbstractDna> DnaSequenceData::getDnaSequence() {
     return m_seq;
 }
-inline void  DnaSequenceData::setDnaSequence(SharedPtr<AbstractDna> ds){
-    m_seq=ds;
+
+inline void DnaSequenceData::setDnaSequence(SharedPtr<AbstractDna> ds) {
+    m_seq = ds;
 }
 
 inline string DnaSequenceData::getName() const {

@@ -4,12 +4,12 @@
 
 #include "AbstractDna.h"
 #include "../SharedPtr.h"
-#include "../Nucleotide.h"
+#include "Nucleotide.h"
 
 class ConcatDecorator : public AbstractDna {
 
 public:
-    ConcatDecorator(vector<SharedPtr<AbstractDna> > dna_vector) : m_dna_vector(dna_vector) {
+    ConcatDecorator(vector<IDnaPtr > dna_vector) : m_dna_vector(dna_vector) {
     }
 
     size_t size() const {
@@ -29,11 +29,12 @@ public:
             }
 
         }
+        // return or throw
     }
 
 private:
 
-    vector<SharedPtr<AbstractDna> > m_dna_vector;
+    vector<IDnaPtr > m_dna_vector;
 
 };
 

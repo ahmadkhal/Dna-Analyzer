@@ -1,11 +1,11 @@
 #include "SliceCommand.h"
-#include"../../../Model/DnaAnalyzer.h"
+#include"../../../Model/DnaStore.h"
 #include"../../../Model/DnaData/SliceDecorator.h"
 
 
 
 
-string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string SliceCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
 
     ostringstream oss;
     ostringstream oss_name;

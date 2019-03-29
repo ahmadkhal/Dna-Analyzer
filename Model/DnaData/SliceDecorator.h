@@ -4,13 +4,12 @@
 
 #include "AbstractDna.h"
 
-#include "../SharedPtr.h"
 
-    class SliceDecorator : public AbstractDna {
+class SliceDecorator : public AbstractDna {
 
-    public:
-    SliceDecorator(SharedPtr<AbstractDna> dna, size_t from, size_t to) : m_dna(dna),
-                                                                         m_from(from), m_to(to) {
+public:
+    SliceDecorator(IDnaPtr dna, size_t from, size_t to) : m_dna(dna),
+                                                          m_from(from), m_to(to) {
     }
 
     size_t size() const {
@@ -18,11 +17,11 @@
     }
 
     Nucleotide operator[](size_t index) const {
-        return (*m_dna)[m_from +index];
+        return (*m_dna)[m_from + index];
     }
 
 private:
-    SharedPtr<AbstractDna> m_dna;
+    IDnaPtr m_dna;
     size_t m_from;
     size_t m_to;
 };

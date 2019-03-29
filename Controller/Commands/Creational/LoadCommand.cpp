@@ -5,12 +5,12 @@
 #include "LoadCommand.h"
 
 #include "../../../Model/SharedPtr.h"
-#include "../../../Model/DnaAnalyzer.h"
+#include "../../../Model/DnaStore.h"
 #include "../../../Model/FileWriter.h"
 #include "../../../Model/FIleReader.h"
 
 
-string LoadCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string LoadCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
     ostringstream oss;
     string arg2;
     if (strs.size() == 3) {

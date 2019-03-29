@@ -1,9 +1,9 @@
 #include "ConcatCommand.h"
-#include"../../../Model/DnaAnalyzer.h"
+#include"../../../Model/DnaStore.h"
 #include "../../../Model/DnaData/ConcatDecorator.h"
 
 
-string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string ConcatCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
 
 
     ostringstream oss;

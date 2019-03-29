@@ -1,15 +1,11 @@
-
-
 #include "PairCommand.h"
-#include "../../../Model/DnaAnalyzer.h"
+#include "../../../Model/DnaStore.h"
 #include "../../../Model/DnaData/PairDecorator.h"
 #include <stdlib.h>
 #include <sstream>
 
 
-
-
-string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string PairCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
 
     ostringstream oss;
     ostringstream oss_name;
@@ -28,7 +24,7 @@ string PairCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_ana
         string paired_name;
         if (strs[3] == "@@") {
 
-            paired_name = ManipulationCommand::choose_name(sp->getName(), dna_analyzer,"_p");
+            paired_name = ManipulationCommand::choose_name(sp->getName(), dna_analyzer, "_p");
 
 
         } else {

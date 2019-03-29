@@ -1,10 +1,10 @@
 #include "ManipulationCommand.h"
-#include "../../../Model/DnaAnalyzer.h"
+#include "../../../Model/DnaStore.h"
 
 
 
 
-string ManipulationCommand::choose_name(const string &sequence_name, SharedPtr<DnaAnalyzer> dna_analyzer, string postfix) {
+string ManipulationCommand::choose_name(const string &sequence_name, SharedPtr<DnaStore> dna_analyzer, string postfix) {
     size_t count = 0;
     ostringstream oss_name;
     do {

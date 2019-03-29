@@ -1,10 +1,10 @@
 
 #include "NewCommand.h"
 #include <sstream>
-#include"../../../Model/DnaAnalyzer.h"
+#include"../../../Model/DnaStore.h"
 
 
-string NewCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string NewCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
     string arg1 = strs[1];
     string arg2;
     ostringstream arg2_string_stream;

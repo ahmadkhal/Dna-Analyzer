@@ -7,7 +7,7 @@
 
 class PairCommand : public ManipulationCommand {
 public:
-    string execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer);
+    string execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer);
 
 };
 

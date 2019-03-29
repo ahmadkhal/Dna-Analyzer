@@ -1,11 +1,11 @@
 
 #include"ReplaceCommand.h"
-#include"../../../Model/DnaAnalyzer.h"
+#include"../../../Model/DnaStore.h"
 #include "../../../Model/DnaData/ReplaceDecorator.h"
 
 
 
-string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaAnalyzer> dna_analyzer) {
+string ReplaceCommand::execute(vector<string> &strs, SharedPtr<DnaStore> dna_analyzer) {
     ostringstream oss;
 
     SharedPtr<DnaSequenceData> sp(dna_analyzer->getDnaSequenceByArg(strs[1]));
